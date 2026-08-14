@@ -17,7 +17,6 @@
   --driver-accent3: #8b183a;
   --progress: 3.7%;
 }
-
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -31,7 +30,6 @@ button, a { font: inherit; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
 button { cursor: pointer; }
-
 .page-noise {
   position: fixed;
   inset: 0;
@@ -40,7 +38,6 @@ button { cursor: pointer; }
   opacity: .12;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E");
 }
-
 /* HEADER */
 .topbar {
   height: var(--header-h);
@@ -89,7 +86,6 @@ button { cursor: pointer; }
 }
 .topbar.is-compact .brand { width: 104px; height: 54px; }
 .topbar.is-compact .brand img { width: 100px; height: 54px; }
-
 .main-nav {
   display: flex;
   align-items: center;
@@ -155,7 +151,6 @@ button { cursor: pointer; }
 .topbar.is-compact .nav-icon svg { width: 15px; height: 15px; }
 .topbar.is-compact .nav-copy small { display: none; }
 .topbar.is-compact .nav-copy b { font-size: .72rem; }
-
 .top-download {
   margin-left: auto;
   min-width: 205px;
@@ -190,7 +185,6 @@ button { cursor: pointer; }
 .topbar.is-compact .top-download small { display: none; }
 .nav-toggle { display: none; margin-left: auto; background: transparent; border: 0; width: 44px; }
 .nav-toggle span { display: block; height: 3px; background: #fff; margin: 6px 0; }
-
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -231,7 +225,6 @@ button { cursor: pointer; }
 .poster-tag { position: absolute; bottom: 11%; background: var(--cyan); color: #051015; font-weight: 900; letter-spacing: 3px; padding: 12px 30px; transform: rotate(-4deg); }
 .scroll-cue { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 4; display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: .65rem; letter-spacing: 3px; color: #adb6bc; }
 .scroll-cue i { width: 1px; height: 42px; background: linear-gradient(var(--yellow),transparent); }
-
 /* SHARED SECTIONS */
 .section-shell { position: relative; padding: 105px max(4vw,calc((100vw - var(--max))/2)); overflow: hidden; }
 .section-heading { position: relative; z-index: 2; }
@@ -244,7 +237,6 @@ button { cursor: pointer; }
 .brush-cyan { background: linear-gradient(90deg,transparent,var(--cyan),transparent); right: -5vw; top: 30px; }
 .brush-orange { background: linear-gradient(90deg,transparent,var(--orange),transparent); left: -8vw; top: 50px; }
 .brush-blue { background: linear-gradient(90deg,transparent,#0fa9df,transparent); right: -6vw; top: 30px; }
-
 /* NEWS */
 .news-tabs { position: absolute; top: 120px; right: max(4vw,calc((100vw - var(--max))/2)); display: flex; background: #0b0f13; }
 .tab { border: 0; background: transparent; color: #fff; padding: 17px 36px; font-family: Impact,"Arial Narrow Bold",sans-serif; letter-spacing: 1px; }
@@ -257,7 +249,6 @@ button { cursor: pointer; }
 .news-body span { font-weight: 900; color: #ec5a2f; font-size: .72rem; letter-spacing: 1.4px; }
 .news-body h3 { font-family: Impact,"Arial Narrow Bold",sans-serif; font-size: 1.42rem; line-height: 1.2; margin: 10px 0 18px; }
 .news-body time { color: #78848a; font-size: .75rem; }
-
 /* DRIVERS — REBUILT TO MATCH THE REFERENCE PRESENTATION */
 .drivers {
   height: calc(100vh - 58px);
@@ -389,7 +380,6 @@ button { cursor: pointer; }
 .slash-cyan { left: 39.2%; width: 10px; color: var(--cyan); background: var(--cyan); }
 .slash-white { left: 40.2%; width: 18px; color: rgba(255,255,255,.85); background: rgba(255,255,255,.92); }
 .slash-accent { left: 41.8%; width: 6px; color: var(--driver-accent); background: var(--driver-accent); }
-
 .driver-layout {
   position: relative;
   z-index: 3;
@@ -493,7 +483,6 @@ button { cursor: pointer; }
 }
 .view-profile:hover { transform: translateY(-3px); filter: brightness(1.08); }
 .view-profile b { width: 25px; height: 25px; border: 2px solid #111; border-radius: 50%; display: grid; place-items: center; font-size: .63rem; }
-
 .driver-art-wrap {
   position: absolute;
   z-index: 4;
@@ -531,7 +520,6 @@ button { cursor: pointer; }
   animation: glowPulse 3.2s ease-in-out infinite alternate;
 }
 .driver-shadow { position: absolute; bottom: 2.2%; width: 48%; height: 4%; background: rgba(0,0,0,.34); filter: blur(18px); border-radius: 50%; }
-
 .driver-selector {
   position: absolute;
   z-index: 8;
@@ -572,7 +560,6 @@ button { cursor: pointer; }
 .driver-thumb.is-active { border-color: #07090b; box-shadow: 0 0 0 3px var(--driver-accent),0 6px 18px rgba(0,0,0,.35); }
 .driver-thumb.is-active::after { content: ""; position: absolute; inset: 0; border-right: 5px solid var(--cyan); pointer-events: none; }
 .driver-thumb-index { position: absolute; left: 3px; bottom: 2px; padding: 1px 4px; color: #fff; background: rgba(0,0,0,.72); font: 700 .55rem Arial,sans-serif; }
-
 .driver-progress {
   position: absolute;
   z-index: 9;
@@ -588,10 +575,8 @@ button { cursor: pointer; }
 .driver-progress i::before { content: ""; display: block; width: var(--progress); height: 100%; background: var(--driver-accent); transition: width .45s ease; }
 .driver-progress i b { display: block; width: 100%; height: 100%; background: linear-gradient(90deg,var(--yellow),var(--cyan)); transform-origin: left; animation: autoTimer 6s linear forwards; }
 .driver-progress small { margin-left: 5px; font: 700 .55rem Arial,sans-serif; letter-spacing: 1.3px; color: #3f4b50; }
-
 .driver-color-world.is-exiting { animation: colorWorldOut .38s ease-in forwards; }
 .driver-color-world.is-exiting .driver-backdrop-art { animation: backdropOut .38s ease-in forwards; }
-
 /* CREATOR */
 .creator { min-height: 680px; background: linear-gradient(130deg,#0d151d,#182934); display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 5vw; }
 .creator::before { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg,transparent 0 53%,rgba(21,201,237,.17) 53% 72%,transparent 72%); }
@@ -610,7 +595,6 @@ button { cursor: pointer; }
 .creator-points strong { font-family: Impact,sans-serif; font-size: 2rem; color: var(--yellow); }
 .creator-points span { font-weight: 800; font-size: .78rem; }
 .yellow-link { border: 0; background: var(--yellow); color: #0b0f12; font-family: Impact,"Arial Narrow Bold",sans-serif; letter-spacing: .8px; padding: 13px 26px; margin-top: 18px; min-width: 150px; clip-path: polygon(0 0,94% 0,100% 50%,94% 100%,0 100%,6% 50%); display: inline-flex; align-items: center; gap: 12px; }
-
 /* TUTORIAL + FEATURES */
 .tutorial-tabs { display: grid; grid-template-columns: repeat(3,1fr); max-width: 760px; margin: 28px auto 34px; background: #090d10; position: relative; z-index: 2; }
 .tutorial-tabs button { border: 0; background: #090d10; color: #fff; padding: 12px; font-family: Impact,sans-serif; letter-spacing: 1px; }
@@ -630,11 +614,11 @@ button { cursor: pointer; }
 .feature-caption h3 { font-family: Impact,sans-serif; font-size: 2rem; margin: 0 0 6px; }
 .feature-caption p { margin: 0; color: #d3dce0; }
 .feature-arrow { position: absolute; z-index: 4; top: 50%; transform: translateY(-50%); width: 46px; height: 90px; border: 0; background: #0b0e10; color: #fff; font-size: 2.4rem; }
-.feature-arrow.left { left: 0; }.feature-arrow.right { right: 0; }
+.feature-arrow.left { left: 0; }
+.feature-arrow.right { right: 0; }
 .feature-dots { display: flex; justify-content: center; gap: 8px; position: relative; z-index: 2; }
 .feature-dots button { width: 28px; height: 5px; border: 0; background: #68777e; }
 .feature-dots button.is-active { background: var(--yellow); width: 54px; }
-
 /* DOWNLOAD + FOOTER */
 .download { position: relative; min-height: 540px; background: #0b1117; overflow: hidden; display: flex; align-items: center; }
 .download-diagonal { position: absolute; inset: -20% 55% -20% -20%; background: linear-gradient(135deg,#f13d20,#ffae17); transform: skewX(-12deg); }
@@ -715,7 +699,6 @@ footer span { color: #dce2e4; }
 .is-hidden { display: none !important; }
 [data-reveal] { opacity: 0; transform: translateY(28px); transition: .75s cubic-bezier(.2,.8,.2,1); }
 [data-reveal].revealed { opacity: 1; transform: none; }
-
 /* ANIMATIONS */
 @keyframes characterIn { from { opacity: 0; transform: translateX(180px) scale(.92) rotate(.8deg); } 70% { opacity: 1; } to { opacity: 1; transform: translateX(0) scale(1) rotate(0); } }
 @keyframes characterOut { to { opacity: 0; transform: translateX(-135px) scale(.95) rotate(-1deg); } }
@@ -730,139 +713,6 @@ footer span { color: #dce2e4; }
 @keyframes glowPulse { from { opacity: .45; transform: scale(.95); } to { opacity: .8; transform: scale(1.06); } }
 @keyframes autoTimer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @keyframes cardIn { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
-
-@media (max-width: 1260px) {
-  .main-nav a { min-width: 102px; padding-right: 9px; }
-  .nav-copy small { display: none; }
-  .top-download { min-width: 174px; }
-  .driver-copy { left: 2%; width: 39vw; }
-  .driver-art-wrap { left: 37%; right: 10%; }
-  .driver-selector { right: .6%; }
-}
-
-@media (max-width: 1050px) {
-  .main-nav { gap: 4px; margin-left: 1vw; }
-  .main-nav a { min-width: 48px; width: 48px; padding: 0; justify-content: center; }
-  .nav-copy { display: none; }
-  .top-download { min-width: 165px; }
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-poster { position: absolute; right: -15%; opacity: .33; width: 70%; z-index: -1; }
-  .news-grid { grid-template-columns: repeat(2,1fr); }
-  .news-card:last-child { grid-column: span 2; }
-  .driver-copy h2 { font-size: clamp(4.5rem,8vw,7rem); }
-  .driver-copy { width: 42vw; }
-  .driver-art-wrap { left: 38%; }
-  .creator { grid-template-columns: 1fr; }
-  .creator-art { display: none; }
-  .download-inner { grid-template-columns: .7fr 1fr; }
-  .download-buttons { grid-column: 2; }
-  .download-diagonal { inset: -20% 66% -20% -25%; }
-}
-
-@media (max-width: 820px) {
-  .topbar { --header-h: 68px; }
-  .topbar.is-compact { --header-h: 56px; }
-  .brand { width: 115px; height: 60px; }
-  .brand img { width: 110px; height: 60px; }
-  .top-download { display: none; }
-  .nav-toggle { display: block; }
-  .main-nav {
-    position: absolute;
-    top: var(--header-h);
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 12px 18px 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    height: auto;
-    background: rgba(5,8,12,.98);
-    transform: translateY(-145%);
-    transition: .3s;
-    z-index: -1;
-  }
-  .main-nav.is-open { transform: translateY(0); }
-  .main-nav a { width: 100%; min-width: 0; height: 54px; justify-content: flex-start; padding: 0 12px; }
-  .nav-copy { display: flex; }
-  .nav-copy small { display: block; }
-  .hero { padding-top: 68px; }
-  .hero-copy { padding-top: 10vh; }
-  .hero-logo { width: 90%; }
-  .hero-poster { right: -38%; width: 100%; }
-  .section-shell { padding: 80px 5vw; }
-  .news-tabs { position: relative; top: auto; right: auto; margin-top: 22px; }
-  .news-grid { grid-template-columns: 1fr; }
-  .news-card:last-child { grid-column: auto; }
-
-  .drivers { height: auto; min-height: 1080px; }
-  .driver-copy { top: 5%; left: 5%; width: 76%; }
-  .driver-copy h2 { font-size: clamp(4.4rem,15vw,7rem); max-width: 80vw; }
-  .driver-kicker { font-size: 1rem; }
-  .driver-tagline { max-width: 70vw; }
-  .driver-art-wrap { left: 8%; right: 14%; top: 37%; height: 63%; }
-  .driver-art-wrap img { height: 100%; }
-  .driver-color-world { left: 16%; top: 33%; }
-  .driver-slash { top: 25%; }
-  .slash-cyan { left: 23%; }.slash-white { left: 24.5%; }.slash-accent { left: 27%; }
-  .driver-selector { top: 44%; right: 1%; height: 48%; width: 72px; }
-  .driver-progress { left: 5%; bottom: 12px; }
-  .driver-ghost { top: 34%; font-size: 10rem; }
-  .skill-list { width: 370px; }
-  .skill { min-height: 64px; grid-template-columns: 64px 1fr; }
-  .skill-icon { width: 64px; height: 64px; }
-  .view-profile { width: 245px; min-height: 48px; }
-
-  .creator { min-height: auto; }
-  .tutorial-grid { grid-template-columns: repeat(2,1fr); }
-  .feature-card { min-width: 86%; }
-  .download-inner { grid-template-columns: 1fr; padding: 70px 0; }
-  .download-inner > img { max-width: 300px; }
-  .download-buttons { grid-column: auto; }
-  .download-diagonal { inset: -10% 55% 55% -30%; }
-  footer { grid-template-columns: 1fr; text-align: center; }
-  footer img { margin: auto; }
-  .profile-card { grid-template-columns: 1fr; max-height: 94vh; overflow: auto; min-height: 0; }
-  .profile-visual-stage { min-height: 470px; }
-  #modalImage { left: 4%; width: 60%; height: 94%; }
-  .modal-vehicle-gallery { right: 1%; bottom: 4%; width: 54%; height: 36%; }
-  .modal-weapon-card { right: 3%; top: 4%; width: 130px; min-height: 155px; grid-template-rows: auto 87px auto; }
-  #modalWeaponImage { height: 87px; }
-  .profile-info-panel { padding: 30px 28px 34px !important; }
-  .profile-card h2 { font-size: 3rem; }
-}
-
-@media (max-width: 540px) {
-  .main-nav { grid-template-columns: 1fr; }
-  .hero-actions { flex-direction: column; }
-  .action { width: 100%; }
-  .section-heading h2,.creator-copy h2,.download h2 { font-size: 3.4rem; }
-  .news-tabs { overflow: auto; }
-  .tab { padding: 14px 22px; white-space: nowrap; }
-  .drivers { min-height: 1040px; }
-  .driver-copy { width: 88%; }
-  .driver-copy h2 { font-size: 4.2rem; }
-  .skill-list { width: calc(100vw - 110px); }
-  .skill h4 { font-size: .98rem; }
-  .skill p { display: none; }
-  .view-profile { width: calc(100vw - 110px); }
-  .driver-art-wrap { left: -2%; right: 16%; top: 41%; height: 59%; }
-  .driver-color-world { left: 4%; top: 38%; }
-  .driver-selector { width: 62px; top: 48%; height: 43%; }
-  .driver-progress small { display: none; }
-  .tutorial-grid { grid-template-columns: 1fr; }
-  .tutorial-tabs { overflow: auto; }
-  .feature-stage { padding: 12px 40px; }
-  .feature-card { min-width: 96%; }
-  .feature-caption h3 { font-size: 1.35rem; }
-  .feature-caption p { font-size: .8rem; }
-  .creator-points { grid-template-columns: 1fr; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
-}
-
 /* ======================================================================
    V6 — ROAD-FIRE RESTYLE
    All sections except the driver showcase are rebuilt around the V8 logo
@@ -879,13 +729,11 @@ footer span { color: #dce2e4; }
   --v6-smoke: #252b31;
   --v6-line: rgba(255, 178, 32, .34);
 }
-
 body {
   background:
     radial-gradient(circle at 16% 0%, rgba(255, 79, 13, .12), transparent 32%),
     linear-gradient(180deg, #0a0c10, #10141a 48%, #090b0f);
 }
-
 /* ------------------------------ HEADER ------------------------------ */
 .topbar {
   height: 92px;
@@ -943,7 +791,6 @@ body {
 .topbar.is-compact .brand { width: 116px; height: 54px; }
 .topbar.is-compact .brand img { width: 108px; height: 53px; }
 .topbar.is-compact .brand::after { top: 7px; bottom: 7px; }
-
 .main-nav {
   margin-left: clamp(0px, 1vw, 18px);
   gap: clamp(6px, .65vw, 11px);
@@ -1025,7 +872,6 @@ body {
 .topbar.is-compact .main-nav a { height: 40px; min-width: 92px; border-left-width: 2px; }
 .topbar.is-compact .nav-icon { width: 25px; height: 25px; flex-basis: 25px; }
 .topbar.is-compact .nav-copy b { font-size: .7rem; }
-
 .top-download {
   min-width: 196px;
   height: 62px;
@@ -1059,7 +905,6 @@ body {
 .top-download .download-mark::after { content: "↓"; display: block; transform: rotate(-45deg); font-size: 1.25rem; color: #fff; }
 .topbar.is-compact .top-download { height: 42px; min-width: 156px; }
 .topbar.is-compact .top-download b { font-size: .78rem; }
-
 /* ------------------------ SHARED FIRE SECTIONS ----------------------- */
 .section-shell:not(.creator) {
   background-color: #11151a;
@@ -1123,7 +968,6 @@ body {
 .brush-cyan,
 .brush-blue,
 .brush-orange { background: linear-gradient(90deg, transparent, rgba(255,69,10,.85), rgba(255,189,23,.78), transparent) !important; }
-
 .section-heading { padding-left: 24px; }
 .section-heading::before {
   content: "";
@@ -1146,7 +990,6 @@ body {
 }
 .section-heading h2::first-letter { color: var(--v6-orange); }
 .section-eyebrow { color: var(--v6-gold); }
-
 /* ------------------------------ HERO -------------------------------- */
 .hero {
   background: #0a0c10;
@@ -1199,7 +1042,6 @@ body {
 }
 .poster-road { animation: v6RoadShift 7s ease-in-out infinite alternate; }
 .poster-tag { background: linear-gradient(90deg, var(--v6-gold), var(--v6-orange)); box-shadow: 0 10px 24px rgba(255, 91, 9, .24); }
-
 /* ------------------------------- NEWS ------------------------------- */
 .news-tabs {
   background: rgba(6,8,10,.72);
@@ -1245,7 +1087,6 @@ body {
 .news-body { position: relative; z-index: 4; background: linear-gradient(180deg, rgba(15,18,21,.2), rgba(12,15,18,.98)); }
 .news-body span { color: var(--v6-gold); }
 .news-body time { color: #9da4a6; }
-
 /* ----------------------------- CREATOR ------------------------------ */
 .creator {
   min-height: 720px;
@@ -1297,7 +1138,6 @@ body {
 }
 .creator-points article::before { content: ""; position: absolute; inset: auto 0 0; height: 3px; background: linear-gradient(90deg, var(--v6-red), var(--v6-gold)); }
 .yellow-link { background: linear-gradient(110deg, var(--v6-gold), var(--v6-orange)); box-shadow: 0 12px 25px rgba(255,93,9,.2); }
-
 /* ---------------------------- TUTORIAL ------------------------------ */
 .tutorial-tabs {
   background: rgba(5,7,9,.82);
@@ -1338,7 +1178,6 @@ body {
 .tutorial-card:hover { transform: translateY(-8px); }
 .tutorial-card:hover img { transform: scale(1.075); filter: saturate(1.18) contrast(1.05); }
 .tutorial-card h3 { padding: 60px 18px 16px; }
-
 /* ----------------------------- FEATURES ----------------------------- */
 .feature-stage { padding: 30px 76px; }
 .feature-card {
@@ -1374,7 +1213,6 @@ body {
 .feature-arrow.right::first-letter { transform: scaleX(-1); }
 .feature-dots button { height: 6px; background: #4b5053; clip-path: polygon(3px 0,100% 0,calc(100% - 3px) 100%,0 100%); }
 .feature-dots button.is-active { background: linear-gradient(90deg, var(--v6-red), var(--v6-gold)); box-shadow: 0 0 12px rgba(255,94,9,.5); }
-
 /* ----------------------------- DOWNLOAD ----------------------------- */
 .download {
   min-height: 610px;
@@ -1417,7 +1255,6 @@ body {
 .big-download::before { content:""; position:absolute; inset:0; transform:translateX(-120%) skewX(-18deg); background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent); transition:.55s; }
 .big-download:hover::before { transform:translateX(120%) skewX(-18deg); }
 .mirror { border-color: rgba(255, 151, 19, .42); background: rgba(255,255,255,.025); }
-
 footer {
   background:
     linear-gradient(90deg, rgba(255,81,10,.08), transparent 22%, transparent 78%, rgba(255,165,20,.05)),
@@ -1425,7 +1262,6 @@ footer {
   border-top: 4px solid transparent;
   border-image: linear-gradient(90deg, transparent, var(--v6-red), var(--v6-gold), var(--v6-red), transparent) 1;
 }
-
 /* ------------------- DRIVER: ONLY ACTIVE THUMB BORDER ---------------- */
 .driver-thumb.is-active {
   z-index: 3;
@@ -1472,7 +1308,6 @@ footer {
   letter-spacing: .8px;
   pointer-events: none;
 }
-
 /* ---------------------------- ANIMATIONS ----------------------------- */
 @keyframes v6FireDrift {
   0% { transform: translate3d(-1.5%, 1.5%, 0) scale(1.02); filter: saturate(.95); }
@@ -1487,46 +1322,12 @@ footer {
 @keyframes v6RoadShift { from { transform: rotate(29deg) translateY(-12px); } to { transform: rotate(29deg) translateY(16px); } }
 @keyframes v6Spin { to { transform: rotate(360deg); } }
 @keyframes v6DiagonalPulse { from { transform: skewX(-12deg) translateX(-1.5%); } to { transform: skewX(-12deg) translateX(2%); } }
-
 /* ---------------------------- RESPONSIVE ----------------------------- */
 @media (max-width: 1320px) {
   .main-nav a { min-width: 98px; padding: 0 9px; }
   .nav-copy small { display: none; }
   .top-download { min-width: 170px; }
 }
-@media (max-width: 1050px) {
-  .topbar { height: 72px; }
-  .brand { width: 126px; height: 68px; }
-  .brand img { width: 118px; height: 66px; }
-  .main-nav {
-    justify-content: flex-start;
-  }
-  .main-nav a { min-width: 54px; width: 54px; padding: 0; justify-content: center; }
-  .nav-copy { display: none; }
-  .top-download { min-width: 58px; width: 58px; padding: 0; justify-content: center; }
-  .top-download > span:last-child { display: none; }
-  .feature-card { min-width: 78%; }
-}
-@media (max-width: 780px) {
-  .main-nav {
-    background: linear-gradient(155deg,#171b21,#080b0f);
-    border: 1px solid rgba(255,135,16,.28);
-  }
-  .main-nav a { width: 100%; min-width: 0; justify-content: flex-start; padding: 0 14px; }
-  .main-nav a .nav-copy { display: flex; }
-  .top-download { display: none; }
-  .news-tabs { position: relative; top: auto; right: auto; margin-top: 26px; }
-  .section-heading { padding-left: 18px; }
-  .feature-stage { padding: 20px 44px; }
-  .feature-card { min-width: 92%; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .news::before,.tutorial::before,.features::before,.news::after,.tutorial::after,.features::after,
-  .section-shell:not(.creator) .brush,.hero-bg,.hero::before,.hero-speed,.hero-logo,.hero-poster::before,
-  .poster-ring,.poster-road,.creator::before,.creator::after,.creator-collage::before,.creator-collage::after,
-  .download::before,.download-diagonal,.download-inner > img { animation: none !important; }
-}
-
 /* Generated ember particles for all non-character sections */
 .v6-embers {
   position: absolute;
@@ -1558,8 +1359,6 @@ footer {
   65% { opacity: .42; }
   100% { opacity: 0; transform: translate3d(42px, -74vh, 0) rotate(290deg) scale(.12); }
 }
-@media (prefers-reduced-motion: reduce) { .v6-embers { display: none; } }
-
 /* ======================================================================
    V7 — FEATURE CINEMA CAROUSEL + DOWNLOAD MUD TIRE TRAIL
    ====================================================================== */
@@ -1651,7 +1450,6 @@ footer {
 .shard-three { right: 22%; bottom: 4%; width: 31px; animation-delay: -4s; transform: rotate(42deg); }
 .shard-four { right: 2%; top: 47%; width: 72px; animation-delay: -1.3s; transform: rotate(-9deg); }
 .shard-five { left: 43%; top: 7%; width: 26px; animation-delay: -5.2s; transform: rotate(78deg); }
-
 /* ------------------------- FEATURE CAROUSEL ---------------------------- */
 .feature-stage {
   position: relative;
@@ -1736,7 +1534,6 @@ footer {
 }
 .feature-caption { padding: 118px 38px 34px; }
 .feature-caption h3 { font-size: clamp(1.8rem,2.7vw,2.65rem); }
-
 .feature-arrow {
   position: absolute;
   z-index: 8;
@@ -1806,7 +1603,6 @@ footer {
   letter-spacing: 1.2px;
 }
 .feature-dots { margin-top: 8px; }
-
 /* -------------------------- DOWNLOAD TIRE TRAIL ------------------------ */
 .download-tire-trail {
   position: absolute;
@@ -1868,7 +1664,6 @@ footer {
 .download-inner { z-index: 4; }
 .download-diagonal { z-index: 1; }
 .download::after { z-index: 0; }
-
 @keyframes v7ImpactPulse {
   0%,100% { transform: scale(.94) rotate(-2deg); opacity: .55; }
   48% { transform: scale(1.045) rotate(1deg); opacity: .88; }
@@ -1892,32 +1687,6 @@ footer {
 @keyframes v7TreadMove {
   to { background-position: 0 -100px, 0 -100px; }
 }
-
-@media (max-width: 1050px) {
-  .feature-stage { padding-inline: 70px; }
-  .feature-card { flex-basis: min(760px, 76vw); }
-  .feature-impact { width: 55vw; right: -10vw; opacity: .28; }
-  .download-tire-trail { left: 17%; opacity: .46; }
-}
-@media (max-width: 780px) {
-  .feature-stage { padding: 22px 48px 32px; }
-  .feature-viewport { -webkit-mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); }
-  .feature-track { gap: 18px; }
-  .feature-card { flex-basis: 82vw; }
-  .feature-arrow { width: 48px; height: 64px; }
-  .feature-arrow.left { left: 1px; }
-  .feature-arrow.right { right: 1px; }
-  .feature-arrow svg { width: 30px; height: 30px; }
-  .feature-caption { padding: 92px 22px 22px; }
-  .feature-impact { width: 78vw; opacity: .18; top: 14%; }
-  .impact-wheel { width: 82px; border-width: 12px; }
-  .download-tire-trail { left: 20%; bottom: -210px; width: 150px; opacity: .34; }
-  .tire-line { width: 52px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .feature-impact *, .download-tire-trail, .tire-line { animation: none !important; }
-}
-
 /* ======================================================================
    V8 — WARM CHARACTER-SCENE WORLD
    Rebuilds every non-driver background around the driver showcase's
@@ -1937,12 +1706,10 @@ footer {
   --v8-red: #e82f16;
   --v8-brown: #5f2a14;
 }
-
 body {
   background: var(--v8-paper-deep);
   color: var(--v8-ink);
 }
-
 /* Warm graphite header; existing controls and compact behavior remain. */
 .topbar {
   background:
@@ -1961,7 +1728,6 @@ body {
 }
 .nav-icon { background: #30241d; border-color: rgba(255,187,30,.22); }
 .nav-copy small { color: #b6a99f; }
-
 /* One reusable animated scene layer, added by script to every section except Drivers. */
 .hero,
 .news,
@@ -2062,7 +1828,6 @@ body {
 .scene-slash-a { top: 18%; color: var(--v8-gold); background: currentColor; }
 .scene-slash-b { top: 23%; height: 3px; color: rgba(255,255,255,.82); background: currentColor; animation-delay: -2.4s; }
 .scene-slash-c { bottom: 13%; height: 11px; color: var(--v8-orange-hot); background: currentColor; animation-delay: -4.7s; }
-
 /* Slightly different composition per section — same family, never one repeated background. */
 .news .scene-panel { left: 55%; top: -18%; bottom: -20%; transform: rotate(1.5deg); }
 .news .scene-ghost { top: 8%; left: -1vw; }
@@ -2076,7 +1841,6 @@ body {
 .features .scene-halftone { left: auto; right: -7%; transform: scaleX(-1); }
 .download .scene-panel { left: 50%; right: -10%; top: -21%; bottom: -24%; }
 .download .scene-ghost { left: 2vw; top: 10%; }
-
 /* Section paper fields and readable dark typography. */
 .hero {
   background:
@@ -2109,7 +1873,6 @@ body {
 .poster-ring { border-color: rgba(255,77,13,.34); box-shadow: 0 0 0 15px rgba(255,196,30,.13),0 0 75px rgba(198,67,11,.15); }
 .poster-road { opacity: .58; }
 .scroll-cue { color: #59483c; }
-
 .news,
 .tutorial,
 .features {
@@ -2138,7 +1901,6 @@ body {
 }
 .section-eyebrow { color: #c54510; }
 .brush { z-index: 2; opacity: .48; filter: blur(.2px); }
-
 .creator {
   min-height: 720px;
   color: var(--v8-ink);
@@ -2160,7 +1922,6 @@ body {
 .creator-copy > p { color: #4e4943; }
 .creator-points article { color: #1a1715; background: rgba(255,255,255,.34); border-color: rgba(117,55,20,.2); box-shadow: 0 12px 26px rgba(87,50,25,.08); }
 .creator-collage { box-shadow: 0 24px 55px rgba(85,42,18,.22), inset 0 0 0 1px rgba(255,151,19,.25); }
-
 .download {
   min-height: 610px;
   color: var(--v8-ink);
@@ -2185,7 +1946,6 @@ body {
 .download-inner p:not(.section-eyebrow) { color: #4d4842; }
 .mirror { color: #2d251f; border-color: rgba(112,52,20,.36); background: rgba(255,255,255,.34); }
 .download-tire-trail { z-index: 4; mix-blend-mode: multiply; opacity: .52; }
-
 footer {
   color: #4b423b;
   background:
@@ -2196,7 +1956,6 @@ footer {
 }
 footer span { color: #2d2723; font-weight: 800; }
 footer img { filter: drop-shadow(0 8px 8px rgba(88,40,16,.2)); }
-
 /* Existing cards remain dark game-media objects, but are warmed and lifted from the paper. */
 .news-card,.tutorial-card,.feature-card {
   box-shadow: 0 20px 42px rgba(81,45,24,.2), 0 0 0 1px rgba(255,127,15,.08);
@@ -2206,7 +1965,6 @@ footer img { filter: drop-shadow(0 8px 8px rgba(88,40,16,.2)); }
 .tutorial-card { background: #211d1a; }
 .feature-card { background: #181614; }
 .feature-arrow:disabled { opacity: .53; }
-
 /* Ambient fire ash: coordinated, sparse, and readable over light paper. */
 .v6-embers {
   z-index: 3;
@@ -2236,7 +1994,6 @@ footer img { filter: drop-shadow(0 8px 8px rgba(88,40,16,.2)); }
 }
 .v6-embers i:nth-child(4n+1) { transform-origin: 30% 70%; }
 .v6-embers i:nth-child(5n+2) { filter: blur(.7px); }
-
 /* Driver showcase is untouched except for the requested selector squares. */
 .driver-selector {
   width: 92px;
@@ -2270,7 +2027,6 @@ footer img { filter: drop-shadow(0 8px 8px rgba(88,40,16,.2)); }
   filter: saturate(.78) contrast(1.08);
 }
 .driver-thumb-index { display: none; }
-
 @keyframes v8ColorWorld {
   from { transform: translate3d(-1.2%,0,0) scale(1.015); filter: saturate(.95); }
   to { transform: translate3d(1.5%,.8%,0) scale(1.045); filter: saturate(1.08); }
@@ -2301,27 +2057,6 @@ footer img { filter: drop-shadow(0 8px 8px rgba(88,40,16,.2)); }
   58% { opacity: calc(var(--alpha) * .72); transform: translate3d(var(--sway),-44vh,0) rotate(165deg) scale(.82); }
   100% { opacity: 0; transform: translate3d(var(--drift),-88vh,0) rotate(330deg) scale(.18); }
 }
-
-@media (max-width: 820px) {
-  .scene-panel { left: 39%; opacity: .82; }
-  .scene-ghost { font-size: clamp(6rem,24vw,12rem); top: 11%; }
-  .scene-slash { width: 80vw; right: -26vw; }
-  .creator .scene-panel,.features .scene-panel { right: 43%; }
-  .driver-selector { width: 72px; top: 50%; height: auto; }
-  .driver-thumbs { grid-template-rows: repeat(4,72px); }
-  .driver-thumb { width: 72px; height: 72px; }
-}
-@media (max-width: 540px) {
-  .scene-panel { left: 31%; opacity: .75; }
-  .scene-halftone { width: 80vw; }
-  .driver-selector { width: 62px; top: 53%; }
-  .driver-thumbs { grid-template-rows: repeat(4,62px); gap: 6px; }
-  .driver-thumb { width: 62px; height: 62px; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .v8-scene-decor *, .v6-embers i { animation: none !important; }
-}
-
 /* ========================================================================== 
    V9 — GPU cinematic section navigation and performance layer
    Keeps every visual effect, but only the visible scene spends animation time.
@@ -2331,48 +2066,26 @@ html.scene-engine-ready {
   scroll-behavior: auto;
   overscroll-behavior-y: none;
 }
-
 body.scene-engine-ready {
   overscroll-behavior-y: none;
 }
-
 .scene-section {
   position: relative;
   scroll-margin-top: 58px;
   transform: translateZ(0);
   backface-visibility: hidden;
 }
-
-@media (min-width: 901px) and (min-height: 680px) {
-  body.scene-engine-ready main > .scene-section {
-    min-height: calc(100vh - 58px);
-    contain: layout paint style;
-  }
-
-  body.scene-engine-ready main > .hero.scene-section {
-    min-height: 100vh;
-  }
-
-  body.scene-engine-ready main > .drivers.scene-section {
-    height: calc(100vh - 58px);
-    min-height: calc(100vh - 58px);
-  }
-
-}
-
 /* Suspend all continuous scene animation off-screen. Nothing is deleted. */
 body.scene-engine-ready .scene-section:not(.scene-active) *,
 body.scene-engine-ready .scene-section:not(.scene-active)::before,
 body.scene-engine-ready .scene-section:not(.scene-active)::after {
   animation-play-state: paused !important;
 }
-
 body.scene-engine-ready .scene-section.scene-active *,
 body.scene-engine-ready .scene-section.scene-active::before,
 body.scene-engine-ready .scene-section.scene-active::after {
   animation-play-state: running;
 }
-
 /* Only active visual layers are promoted to the GPU. */
 body.scene-engine-ready .scene-section.scene-active .v8-scene-decor,
 body.scene-engine-ready .scene-section.scene-active .scene-panel,
@@ -2390,7 +2103,6 @@ body.scene-engine-ready .scene-section.scene-active .download-tire-trail {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
-
 body.scene-engine-ready .scene-section:not(.scene-active) .v8-scene-decor,
 body.scene-engine-ready .scene-section:not(.scene-active) .scene-panel,
 body.scene-engine-ready .scene-section:not(.scene-active) .scene-ghost,
@@ -2405,7 +2117,6 @@ body.scene-engine-ready .scene-section:not(.scene-active) .feature-impact,
 body.scene-engine-ready .scene-section:not(.scene-active) .download-tire-trail {
   will-change: auto;
 }
-
 /* Every scene is reset, then revealed only after the camera lands on it. */
 body.scene-engine-ready .scene-section [data-reveal] {
   opacity: 0;
@@ -2414,61 +2125,48 @@ body.scene-engine-ready .scene-section [data-reveal] {
   transition-duration: .78s;
   transition-timing-function: cubic-bezier(.18,.82,.2,1);
 }
-
 body.scene-engine-ready .scene-section.scene-active [data-reveal].revealed {
   opacity: 1;
   transform: translate3d(0,0,0) scale(1);
 }
-
 /* Scene-specific cinematic entrances. Continuous original animation resumes after it. */
 body.scene-engine-ready .scene-section.scene-entering > .v8-scene-decor {
   animation: v9SceneDecorIn .92s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .scene-section.scene-entering > .v6-embers {
   animation: v9AshFieldIn 1.05s .08s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .hero.scene-entering .hero-bg {
   animation: v9BackdropIn 1.05s cubic-bezier(.16,.84,.2,1) both, v6HeroPan 18s 1.05s ease-in-out infinite alternate;
 }
-
 body.scene-engine-ready .hero.scene-entering .hero-speed-a {
   animation: v9SpeedStrikeIn .8s .08s cubic-bezier(.12,.88,.2,1) both, v6SpeedLine 5.5s .88s ease-in-out infinite alternate;
 }
-
 body.scene-engine-ready .hero.scene-entering .hero-speed-b {
   animation: v9SpeedStrikeIn .8s .18s cubic-bezier(.12,.88,.2,1) both, v6SpeedLine 5.5s .98s ease-in-out infinite alternate;
 }
-
 body.scene-engine-ready .scene-section.scene-entering .brush {
   animation: v9BrushIn .9s .12s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .drivers.scene-entering .driver-paper,
 body.scene-engine-ready .drivers.scene-entering .driver-city {
   animation: v9DriverFieldIn .85s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .features.scene-entering .feature-impact {
   animation: v9ImpactFieldIn .95s .12s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .download.scene-entering .download-diagonal {
   animation: v9DownloadSlashIn .9s cubic-bezier(.12,.88,.2,1) both;
 }
-
 body.scene-engine-ready .download.scene-entering .download-tire-trail {
   animation: v9TireTrailIn 1.08s .12s cubic-bezier(.16,.84,.2,1) both;
 }
-
 body.scene-engine-ready .tutorial.scene-entering .tutorial-card {
   animation-name: cardIn;
   animation-duration: .58s;
   animation-timing-function: cubic-bezier(.16,.84,.2,1);
   animation-fill-mode: both;
 }
-
 /* Small on-screen transition accent. It masks decoding without covering the design. */
 .scene-transition {
   position: fixed;
@@ -2480,13 +2178,11 @@ body.scene-engine-ready .tutorial.scene-entering .tutorial-card {
   visibility: hidden;
   transition: opacity .16s ease, visibility 0s linear .18s;
 }
-
 .scene-transition.is-active {
   opacity: 1;
   visibility: visible;
   transition: opacity .12s ease, visibility 0s;
 }
-
 .scene-transition-rail {
   position: absolute;
   right: -20vw;
@@ -2497,20 +2193,15 @@ body.scene-engine-ready .tutorial.scene-entering .tutorial-card {
   box-shadow: 0 0 24px rgba(255,112,10,.72);
   opacity: 0;
 }
-
 .scene-transition .rail-a { top: 34%; }
 .scene-transition .rail-b { top: 38%; height: 3px; filter: brightness(1.45); }
-
 .scene-transition.is-forward .scene-transition-rail {
   animation: v9TransitionForward .82s cubic-bezier(.14,.82,.19,1) both;
 }
-
 .scene-transition.is-backward .scene-transition-rail {
   animation: v9TransitionBackward .82s cubic-bezier(.14,.82,.19,1) both;
 }
-
 .scene-transition .rail-b { animation-delay: .07s !important; }
-
 .scene-transition-badge {
   position: absolute;
   right: 3vw;
@@ -2526,18 +2217,15 @@ body.scene-engine-ready .tutorial.scene-entering .tutorial-card {
   opacity: 0;
   transform: translate3d(80px,0,0) rotate(-2deg);
 }
-
 .scene-transition.is-active .scene-transition-badge {
   animation: v9BadgeIn .72s .12s cubic-bezier(.14,.82,.19,1) both;
 }
-
 .scene-transition-badge small {
   font-size: .58rem;
   font-weight: 900;
   letter-spacing: 2.3px;
   opacity: .72;
 }
-
 .scene-transition-badge b {
   margin-top: 3px;
   font-family: Impact,"Arial Narrow Bold",sans-serif;
@@ -2546,89 +2234,61 @@ body.scene-engine-ready .tutorial.scene-entering .tutorial-card {
   line-height: 1;
   white-space: nowrap;
 }
-
 body.scene-navigation-locked {
   user-select: none;
 }
-
 @keyframes v9SceneDecorIn {
   0% { opacity: 0; transform: translate3d(6vw,0,0) scale(1.025); }
   65% { opacity: 1; }
   100% { opacity: 1; transform: translate3d(0,0,0) scale(1); }
 }
-
 @keyframes v9AshFieldIn {
   0% { opacity: 0; transform: translate3d(0,34px,0); }
   100% { opacity: .92; transform: translate3d(0,0,0); }
 }
-
 @keyframes v9BackdropIn {
   0% { opacity: 0; transform: translate3d(3vw,0,0) scale(1.09); }
   100% { opacity: .19; transform: translate3d(0,0,0) scale(1.02); }
 }
-
 @keyframes v9SpeedStrikeIn {
   0% { opacity: 0; transform: translate3d(26vw,0,0) rotate(-31deg) scaleX(.45); }
   100% { opacity: 1; transform: translate3d(0,0,0) rotate(-31deg) scaleX(1); }
 }
-
 @keyframes v9BrushIn {
   0% { opacity: 0; transform: translate3d(18vw,0,0) rotate(-14deg) scaleX(.55); }
   100% { opacity: .48; transform: translate3d(0,0,0) rotate(-9deg) scaleX(1); }
 }
-
 @keyframes v9DriverFieldIn {
   0% { opacity: 0; transform: translate3d(5vw,0,0) scale(1.025); }
   100% { opacity: 1; transform: translate3d(0,0,0) scale(1); }
 }
-
 @keyframes v9ImpactFieldIn {
   0% { opacity: 0; transform: translate3d(-4vw,28px,0) scale(.82) rotate(-4deg); }
   100% { opacity: 1; transform: translate3d(0,0,0) scale(1) rotate(0); }
 }
-
 @keyframes v9DownloadSlashIn {
   0% { opacity: 0; transform: translate3d(-18vw,0,0) skewX(-12deg); }
   100% { opacity: .9; transform: translate3d(0,0,0) skewX(-12deg); }
 }
-
 @keyframes v9TireTrailIn {
   0% { opacity: 0; transform: translate3d(-8vw,18vh,0) rotate(-4deg); }
   100% { opacity: .52; transform: translate3d(0,0,0) rotate(0); }
 }
-
 @keyframes v9TransitionForward {
   0% { opacity: 0; transform: translate3d(22vw,0,0) rotate(-31deg) scaleX(.3); }
   35% { opacity: 1; }
   100% { opacity: 0; transform: translate3d(-112vw,0,0) rotate(-31deg) scaleX(1.08); }
 }
-
 @keyframes v9TransitionBackward {
   0% { opacity: 0; transform: translate3d(-112vw,0,0) rotate(-31deg) scaleX(.3); }
   35% { opacity: 1; }
   100% { opacity: 0; transform: translate3d(22vw,0,0) rotate(-31deg) scaleX(1.08); }
 }
-
 @keyframes v9BadgeIn {
   0% { opacity: 0; transform: translate3d(80px,0,0) rotate(-2deg) scale(.96); }
   26%,72% { opacity: 1; transform: translate3d(0,0,0) rotate(-2deg) scale(1); }
   100% { opacity: 0; transform: translate3d(-30px,0,0) rotate(-2deg) scale(.985); }
 }
-
-@media (max-width: 900px), (max-height: 679px) {
-  .scene-transition { display: none; }
-  .scene-section { scroll-margin-top: 68px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .scene-transition { display: none !important; }
-  body.scene-engine-ready .scene-section [data-reveal] {
-    opacity: 1 !important;
-    transform: none !important;
-    transition: none !important;
-  }
-}
-
 /* ======================================================================
    V10 — MAPS + CREDITS SCENES
    Adds a full-screen battlefield showcase after Drivers, removes the old
@@ -2641,7 +2301,6 @@ body.scene-navigation-locked {
   --map-accent3: #2a211b;
   --map-progress: 12.5%;
 }
-
 /* The NEWS & UPDATES label receives enough room without changing
    the existing compact/mobile behavior. */
 @media (min-width: 1051px) {
@@ -2649,12 +2308,6 @@ body.scene-navigation-locked {
   .main-nav a:first-child { min-width: 158px; }
   .main-nav a:first-child .nav-copy b { font-size: .78rem; }
 }
-@media (min-width: 1321px) {
-  .main-nav { gap: 6px; margin-left: 1.2vw; }
-  .main-nav a { padding-inline: 9px; }
-  .top-download { min-width: 184px; padding-inline: 17px; }
-}
-
 /* Two exact NEWS categories. */
 .news-tabs { grid-template-columns: repeat(2, minmax(180px, 1fr)); }
 .news-card.is-hidden { display: none; }
@@ -2667,7 +2320,6 @@ body.scene-navigation-locked {
   from { opacity: 0; transform: translate3d(0,22px,0) scale(.975); }
   to { opacity: 1; transform: translate3d(0,0,0) scale(1); }
 }
-
 /* ------------------------------ MAPS -------------------------------- */
 .maps {
   position: relative;
@@ -2838,7 +2490,6 @@ body.scene-navigation-locked {
   font: 900 .63rem Arial,sans-serif;
   letter-spacing: 1.7px;
 }
-
 .map-game {
   display: inline-flex;
   margin: 0 0 8px;
@@ -2850,7 +2501,6 @@ body.scene-navigation-locked {
   clip-path: polygon(0 0,96% 0,100% 50%,96% 100%,0 100%,6px 50%);
   box-shadow: 0 5px 16px rgba(0,0,0,.2);
 }
-
 .map-eyebrow {
   margin: 0 0 7px;
   color: var(--map-accent);
@@ -2969,7 +2619,6 @@ body.scene-navigation-locked {
 .map-progress.is-auto-off i b { animation: none !important; transform: scaleX(0) !important; opacity: .25; }
 .map-progress.is-auto-off i { background: rgba(255,255,255,.13); }
 .map-progress .driver-auto-toggle { min-width: 72px; height: 25px; }
-
 @keyframes mapBackdropEnter { from { opacity: 0; transform: translate3d(7vw,0,0) scale(1.12); } to { opacity: 1; transform: translate3d(0,0,0) scale(1.03); } }
 @keyframes mapBackdropDrift { from { transform: translate3d(-1.2%,0,0) scale(1.03); } to { transform: translate3d(1.5%,-.5%,0) scale(1.075); } }
 @keyframes mapColorWorld { from { transform: translate3d(1.5%,0,0) rotate(.2deg); } to { transform: translate3d(-1%,1%,0) rotate(-.45deg); } }
@@ -2979,7 +2628,6 @@ body.scene-navigation-locked {
 @keyframes mapCardEnter { from { opacity: 0; transform: translate3d(-85px,0,0); } to { opacity: 1; transform: translate3d(0,0,0); } }
 @keyframes mapHighlightEnter { from { opacity: 0; transform: translate3d(95px,0,0); } to { opacity: 1; transform: translate3d(0,0,0); } }
 @keyframes mapAutoTimer { from { transform: scaleX(0); } to { transform: scaleX(1); } }
-
 /* ----------------------------- CREDITS ------------------------------ */
 .credits {
   min-height: calc(100vh - 58px);
@@ -3079,7 +2727,6 @@ body.scene-navigation-locked {
 .credits-footer-strip img { width: 118px; height: 58px; object-fit: contain; }
 .credits-footer-strip p { margin: 0; font-size: .7rem; line-height: 1.35; }
 .credits-footer-strip span { font-family: Impact,sans-serif; font-size: .85rem; letter-spacing: 1px; white-space: nowrap; }
-
 /* Integrate new scenes with the V9 cinematic/GPU engine. */
 body.scene-engine-ready .scene-section.scene-active .map-background,
 body.scene-engine-ready .scene-section.scene-active .map-orange-world,
@@ -3108,82 +2755,9 @@ body.scene-engine-ready .maps.scene-entering .map-white-highlight { animation: m
 body.scene-engine-ready .credits.scene-entering .credit-card { animation: cardIn .58s cubic-bezier(.16,.84,.2,1) both; }
 body.scene-engine-ready .credits.scene-entering .credit-card:nth-child(2) { animation-delay: .08s; }
 body.scene-engine-ready .credits.scene-entering .credit-card:nth-child(3) { animation-delay: .16s; }
-
-@media (min-width: 901px) and (min-height: 680px) {
-  body.scene-engine-ready main > .maps.scene-section { height: calc(100vh - 58px); min-height: calc(100vh - 58px); }
-  body.scene-engine-ready main > .credits.scene-section { min-height: calc(100vh - 58px); }
-}
-
-@media (max-width: 1100px) {
-  .map-info-card { width: 45vw; }
-  .map-white-highlight { width: 37vw; right: 11%; }
-  .map-info-card h2 { font-size: clamp(3.2rem,6.3vw,5.8rem); }
-  .credits-grid { gap: 10px; }
-}
-
-@media (max-width: 820px) {
-  .news-tabs { grid-template-columns: repeat(2, minmax(165px,1fr)); overflow-x: auto; }
-  .maps { height: auto; min-height: 1120px; }
-  .map-layout { width: 100%; }
-  .map-info-card { left: 5%; top: 5%; width: 76%; padding: 16px 18px 20px; }
-  .map-mini-frame { height: 180px; }
-  .map-info-card h2 { font-size: clamp(3.5rem,11vw,6rem); }
-  .map-white-highlight { top: 61%; left: 5%; right: auto; width: 72%; }
-  .map-selector { top: 29%; right: 1.5%; width: 72px; height: 52%; }
-  .map-progress { left: 5%; bottom: 18px; }
-  .map-orange-world { width: 74%; right: -29%; }
-  .map-ghost { bottom: 6%; font-size: 9rem; }
-  .credits { padding: 86px 5vw 22px; }
-  .credits-header { margin-left: 0; }
-  .credits-grid { grid-template-columns: 1fr; }
-  .credit-card { min-height: 150px; }
-  .credits-legal { grid-template-columns: 130px 1fr; }
-  .credits-legal img { width: 120px; }
-  .credits-footer-strip { grid-template-columns: 105px 1fr; }
-  .credits-footer-strip span { grid-column: 1 / -1; text-align: center; }
-}
-
-@media (max-width: 540px) {
-  .maps { min-height: 1080px; }
-  .map-info-card { width: 78%; left: 4%; }
-  .map-mini-frame { height: 145px; }
-  .map-description { font-size: .72rem; }
-  .map-stat-grid { gap: 5px; }
-  .map-stat-grid article { padding: 7px; }
-  .map-white-highlight { left: 4%; width: 78%; padding: 18px 22px 20px 31px; }
-  .map-selector { width: 62px; top: 31%; height: 48%; }
-  .map-progress small { display: none; }
-  .credits-header h2 { font-size: 4.2rem; }
-  .credits-legal { grid-template-columns: 1fr; text-align: center; }
-  .credits-legal img { margin: auto; }
-  .credits-footer-strip { grid-template-columns: 1fr; text-align: center; }
-  .credits-footer-strip img { margin: auto; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .map-background,.map-orange-world,.map-grain,.map-speed-line,.map-ghost,.map-info-card,.map-white-highlight,.map-progress i b { animation: none !important; }
-}
-
 /* NEWS now shows one chosen category at a time. */
 .news .news-grid { grid-template-columns: minmax(320px,760px); justify-content: center; }
 .news .news-card:last-child { grid-column: auto; }
-@media (max-width: 820px) { .news .news-grid { grid-template-columns: 1fr; } }
-
-@media (min-width: 901px) and (max-height: 780px) {
-  .credits { padding-top: 62px; padding-bottom: 12px; }
-  .credits-header h2 { font-size: 5.3rem; }
-  .credits-header > p:last-child { margin-top: 10px; font-size: .74rem; }
-  .credits-grid { margin-top: 15px; }
-  .credit-card { min-height: 142px; padding: 17px 20px; }
-  .credit-card h3 { margin: 5px 0 8px; font-size: 1.75rem; }
-  .credit-card p { font-size: .67rem; }
-  .credits-legal { margin-top: 9px; padding-block: 8px; }
-  .credits-legal img { height: 60px; }
-  .credits-footer-strip { margin-top: 8px; min-height: 54px; }
-  .credits-footer-strip img { height: 45px; }
-}
-
-
 /* ========================================================================== 
    V11 — FULL CONCURRENT LOADING + USER DECOR ART
    No visual system is removed. All new movement uses transform/opacity only.
@@ -3243,7 +2817,6 @@ body.scene-engine-ready .news.scene-entering .news-skid-curves {
   from { transform: translate3d(4%, 4%, 0) rotate(8deg); }
   to { transform: translate3d(1%, 1%, 0) rotate(5.5deg); }
 }
-
 /* ---------- TUTORIAL: animated fire wheel + bottom-center skid artwork ---------- */
 .tutorial { isolation: isolate; }
 .tutorial-fire-wheel,
@@ -3323,7 +2896,6 @@ body.scene-engine-ready .tutorial.scene-entering .tutorial-bottom-skids {
   from { opacity: 0; transform: translate3d(-50%, 24%, 0) scale(.93); }
   to { opacity: .18; transform: translate3d(-50%, 0, 0) scale(1); }
 }
-
 /* ---------- DOWNLOAD: repeated orange track art, edge-to-edge ---------- */
 .download { isolation: isolate; }
 .download-track-wall {
@@ -3361,7 +2933,6 @@ body.scene-engine-ready .download.scene-entering .download-track-wall {
   from { transform: translate3d(-1%,0,0) rotate(-7deg) scale(1.08); }
   to { transform: translate3d(1.2%,-1%,0) rotate(-6deg) scale(1.09); }
 }
-
 /* ---------- GPU and paint containment for new decorative layers ---------- */
 body.scene-engine-ready .scene-section.scene-active .news-tire-depth,
 body.scene-engine-ready .scene-section.scene-active .news-skid-curves,
@@ -3379,41 +2950,14 @@ body.scene-engine-ready .scene-section:not(.scene-active) .tutorial-bottom-skids
 body.scene-engine-ready .scene-section:not(.scene-active) .download-track-wall {
   will-change: auto;
 }
-
 /* The old procedural tire layer is intentionally absent from the markup. */
 .download-tire-trail { display: none !important; }
-
 /* Wider containment reduces repaint propagation without altering the artwork. */
 .news-card,
 .tutorial-card,
 .driver-art-wrap,
 .map-info-card,
 .credit-card { contain: layout paint style; }
-
-@media (max-width: 980px) {
-  .news-tire-depth { width: 80vw; opacity: .12; }
-  .news-skid-curves { width: 78vw; opacity: .1; }
-  .tutorial-fire-wheel { width: 58vw; right: -18vw; opacity: .42; }
-  .tutorial-bottom-skids { width: 100vw; bottom: -9%; opacity: .13; }
-  .download-track-wall img { width: 66vw; min-width: 500px; }
-}
-@media (max-width: 650px) {
-  .news-tire-depth { top: 10%; width: 105vw; left: -32vw; opacity: .09; }
-  .news-skid-curves { width: 105vw; right: -42vw; bottom: -7%; opacity: .08; }
-  .tutorial-fire-wheel { width: 82vw; right: -42vw; top: 24%; opacity: .3; }
-  .tutorial-bottom-skids { width: 138vw; bottom: -2%; opacity: .1; }
-  .download-track-wall { opacity: .17; inset: -8% -32%; }
-  .download-track-wall img { width: 104vw; min-width: 430px; }
-  .download-track-wall .track-copy-b { left: 43%; }
-  .download-track-wall .track-copy-c { display: none; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .tutorial-fire-wheel-glow,
-  .tutorial-fire-wheel-heat { animation: none !important; }
-}
-
-
 /* ========================================================================== 
    V13 — VERIFIED USER REFINEMENTS
    This block intentionally uses new asset/CSS filenames to bypass browser cache.
@@ -3421,7 +2965,6 @@ body.scene-engine-ready .scene-section:not(.scene-active) .download-track-wall {
 
 /* NEWS & UPDATES: image #3 is removed from both markup and package. */
 .news-tire-depth { display: none !important; }
-
 /* TUTORIAL: a single unchanged image layer. No flame flicker, glow, heat,
    deformation, scale pulse, or rotation. Only a very soft up/down float. */
 .tutorial-fire-wheel {
@@ -3437,17 +2980,14 @@ body.scene-engine-ready .scene-section:not(.scene-active) .download-track-wall {
 }
 .tutorial-fire-wheel-glow,
 .tutorial-fire-wheel-heat { display: none !important; animation: none !important; }
-
 body.scene-engine-ready .tutorial.scene-entering .tutorial-fire-wheel,
 body.scene-engine-ready .tutorial .tutorial-fire-wheel {
   animation: v13TutorialSoftFloat 8s ease-in-out infinite alternate !important;
 }
-
 @keyframes v13TutorialSoftFloat {
   0%   { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(0, -8px, 0); }
 }
-
 /* DOWNLOAD: keep side copies unchanged. The middle copy now clearly starts
    below the viewport, stretches through the entire scene, and leans right. */
 .download-track-wall {
@@ -3469,7 +3009,6 @@ body.scene-engine-ready .tutorial .tutorial-fire-wheel {
   transform: rotate(28deg) skewX(-3deg) scaleX(.96) !important;
   opacity: .98 !important;
 }
-
 /* Test mode requested by the user: all ambient animations remain running even
    while their section is off-screen. Entrance reveals still happen on arrival. */
 body.scene-engine-ready .scene-section *,
@@ -3477,7 +3016,6 @@ body.scene-engine-ready .scene-section::before,
 body.scene-engine-ready .scene-section::after {
   animation-play-state: running !important;
 }
-
 /* Give the continuously animated ambient layers a real animation even when the
    scene-entering class is absent. */
 body.scene-engine-ready .hero .hero-bg {
@@ -3499,7 +3037,6 @@ body.scene-engine-ready .maps .map-orange-world {
 body.scene-engine-ready .download .download-track-wall {
   animation: v11DownloadTracksDrift 11s ease-in-out infinite alternate;
 }
-
 /* Preserve cinematic entrance + ambient motion for the active scene. */
 body.scene-engine-ready .news.scene-entering .news-skid-curves {
   animation: v11NewsCurvesIn 1.08s .08s cubic-bezier(.16,.84,.2,1) both,
@@ -3517,7 +3054,6 @@ body.scene-engine-ready .download.scene-entering .download-track-wall {
   animation: v11DownloadTracksIn 1.16s cubic-bezier(.16,.84,.2,1) both,
              v11DownloadTracksDrift 11s 1.16s ease-in-out infinite alternate;
 }
-
 /* Keep animated layers GPU-backed in every scene for this test mode. */
 body.scene-engine-ready .scene-section .v8-scene-decor,
 body.scene-engine-ready .scene-section .scene-panel,
@@ -3539,36 +3075,12 @@ body.scene-engine-ready .scene-section .download-track-wall {
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
-
-@media (max-width: 980px) {
-  .download-track-wall .track-copy-b {
-    left: 27% !important;
-    bottom: -66% !important;
-    width: 68vw !important;
-    min-width: 560px !important;
-    height: 220% !important;
-    transform: rotate(25deg) skewX(-2deg) scaleX(.95) !important;
-  }
-}
-
-@media (max-width: 650px) {
-  .download-track-wall .track-copy-b {
-    left: 14% !important;
-    bottom: -58% !important;
-    width: 112vw !important;
-    min-width: 470px !important;
-    height: 205% !important;
-    transform: rotate(22deg) scaleX(.92) !important;
-  }
-}
-
 /* V13 verification fix: override the original high-specificity pause rule. */
 body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active) *,
 body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)::before,
 body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)::after {
   animation-play-state: running !important;
 }
-
 /* ========================================================================== 
    V14 — VIEWPORT FIT + DOWNLOAD TRACK DIRECTION
    - Keeps Drivers and Maps exactly as they were.
@@ -3594,7 +3106,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   transform: rotate(-29deg) skewX(2deg) scaleX(.96) !important;
   opacity: .98 !important;
 }
-
 /* Full cinematic layout: every scene except Drivers and Maps is sized to the
    actual visible viewport under the compact header. The internal content uses
    height-aware clamps so it cannot sink below the browser window. */
@@ -3846,7 +3357,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     height: clamp(42px, 6.5vh, 54px);
   }
 }
-
 /* Extra safety for short, wide desktop windows. Cinematic navigation is still
    enabled at 680px, so this range receives a denser but unchanged composition. */
 @media (min-width: 901px) and (min-height: 680px) and (max-height: 790px) {
@@ -3867,7 +3377,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   .credit-card { min-height: 122px; padding-top: 13px; padding-bottom: 12px; }
   .credits-legal, .credits-footer-strip { margin-top: 6px; }
 }
-
 /* Do not touch the approved Drivers and Maps compositions. */
 
 /* V14.1 verified tire-track placement: its lower end sits just below the
@@ -3880,14 +3389,12 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   height: 185% !important;
   transform: rotate(-29deg) skewX(2deg) scaleX(.96) !important;
 }
-
 /* Final horizontal alignment for the middle track: the lower tread enters at
    the bottom-center, while the same diagonal continues toward the upper-left. */
 .download-track-wall .track-copy-b {
   left: 42% !important;
   bottom: -18% !important;
 }
-
 /* ========================================================================== 
    V15 — RESTORED VISUAL SCALE + NEWS/UPDATES/FEATURES SHOWCASE
    Keeps the V14 viewport-sized scene boundaries, but restores the original
@@ -4143,7 +3650,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   67% { opacity: .8; }
   82%,100% { transform: translateX(90%); opacity: 0; }
 }
-
 /* ---------------- Restore the original visual scale inside V14 scene frames ---------------- */
 @media (min-width: 901px) and (min-height: 680px) {
   /* HOME: original logo, text, buttons and poster sizes; only spacing is tightened. */
@@ -4246,7 +3752,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   }
   .credits-footer-strip img { width: 118px; height: 52px; }
 }
-
 /* Short desktop windows: keep visual scale, compact only the blank spaces. */
 @media (min-width: 901px) and (min-height: 680px) and (max-height: 790px) {
   .hero { padding-top: 68px; }
@@ -4274,43 +3779,14 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   .credit-card { min-height: 154px; padding-top: 16px; padding-bottom: 14px; }
   .credits-legal,.credits-footer-strip { margin-top: 5px; }
 }
-
-@media (max-width: 900px), (max-height: 679px) {
-  .news-showcase { width: 100%; height: 520px; margin: 26px 0 0; overflow: hidden; }
-  .news-slide { width: min(760px,86vw); }
-  .news-slide.is-prev { left: -8%; }
-  .news-slide.is-next { left: 108%; }
-  .news-arrow-prev { left: 2%; }
-  .news-arrow-next { right: 2%; }
-}
-
-@media (max-width: 620px) {
-  .news-showcase { height: 440px; }
-  .news-slide { width: 88vw; top: 7%; }
-  .news-slide.is-prev,.news-slide.is-next { opacity: .18; }
-  .news-arrow { top: 40%; width: 48px; height: 74px; }
-  .news-arrow-label { display: none; }
-  .news-arrow svg { width: 31px; height: 31px; }
-  .news-slide-caption { min-height: 82px; padding-inline: 16px; }
-  .news-slide-caption h3 { font-size: 1.15rem; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .news-slide,.news-shot-frame img,.news-arrow { transition: none !important; }
-  .news-shot-sheen,.news-slide-enter { animation: none !important; }
-}
-
 /* V15.1 alignment: keep the original heading scale while leaving the tab rail
    a clean dedicated zone on ordinary desktop widths. */
 @media (min-width: 901px) and (min-height: 680px) {
   .news .section-heading { max-width: 70%; }
   .news .section-heading h2 { font-size: clamp(3.4rem,6vw,6.6rem); }
 }
-
-
 /* ==========================================================================\n   V17 — requested driver roster controls and group/faction presentation\n   ========================================================================== */
 :root { --driver-auto-duration: 15s; }
-
 .driver-kicker .driver-game-label { color: #11171b; }
 .driver-kicker .driver-kicker-separator { color: rgba(17,23,27,.56); }
 .driver-kicker .driver-faction { font-weight: 950; text-shadow: 0 1px 0 rgba(255,255,255,.38); }
@@ -4318,7 +3794,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 .driver-kicker .faction-coyote { color: #ed7016; }
 .driver-kicker .faction-drifter { color: #269451; }
 .driver-kicker .faction-secret { color: #13a8c8; }
-
 .driver-kicker .driver-game-label,
 #modalKicker .driver-game-label {
   display: inline-block;
@@ -4335,7 +3810,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   -webkit-text-stroke: 1px rgba(34,16,5,.34);
   filter: drop-shadow(0 1px 0 rgba(255,255,255,.18)) drop-shadow(0 2px 3px rgba(92,26,0,.18));
 }
-
 .vehicle-logo-text {
   display: inline-block;
   font-family: Impact,"Arial Narrow Bold",sans-serif;
@@ -4356,11 +3830,9 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   -webkit-text-stroke: 1px color-mix(in srgb,var(--driver-accent3) 58%,white 42%);
   filter: drop-shadow(0 1px 0 rgba(255,255,255,.26)) drop-shadow(0 2px 3px color-mix(in srgb,var(--driver-accent3) 38%,transparent));
 }
-
 .driver-progress i b { animation-duration: var(--driver-auto-duration); }
 .driver-progress.is-auto-off i b { animation: none !important; transform: scaleX(0) !important; opacity: .25; }
 .driver-progress.is-auto-off i { background: rgba(15,22,26,.17); }
-
 .driver-auto-toggle {
   min-width: 72px;
   height: 25px;
@@ -4399,23 +3871,14 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 }
 .driver-auto-toggle.is-off { background: rgba(32,39,43,.72); color: #f1f4f5; border-color: rgba(255,255,255,.16); }
 .driver-progress #driverAutoDelay { margin-left: 0; min-width: 46px; }
-
 #modalKicker .driver-game-label { color: #11171b; }
 #modalKicker .driver-kicker-separator { color: rgba(17,23,27,.5); }
 #modalKicker .faction-vigilante { color: #087dcc; }
 #modalKicker .faction-coyote { color: #ed7016; }
 #modalKicker .faction-drifter { color: #269451; }
 #modalKicker .faction-secret { color: #13a8c8; }
-
-@media (max-width: 820px) {
-  .driver-auto-toggle { min-width: 60px; height: 23px; padding: 0 6px; font-size: .52rem; }
-  .driver-progress #driverAutoDelay { display: none; }
-}
-
-
 /* ==========================================================================\n   V19 — supplied driver portraits, character art, vehicles and weapon assets\n   ========================================================================== */
 .driver-copy { z-index: 7; }
-
 /* Portraits align from the top. When a square crop is necessary, only the lower
    part is clipped, keeping every face and hairstyle correctly framed. */
 .driver-thumb img,
@@ -4427,7 +3890,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   transform: none;
   filter: saturate(.96) contrast(1.04);
 }
-
 .skill-icon { overflow: hidden; }
 .skill-icon img { filter: none; }
 .skill-icon.is-driver { padding: 0; background: #26323a; }
@@ -4442,7 +3904,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   width: 100%; height: 100%; object-fit: contain; object-position: center; transform: none;
   filter: drop-shadow(0 4px 5px rgba(0,0,0,.38));
 }
-
 /* Vehicle artwork is smaller than the driver, mirrored, and staged on the left.
    Second Offense profiles show both supplied variants in one composed group. */
 .driver-vehicle-art {
@@ -4483,25 +3944,12 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   filter: saturate(.92) brightness(.92) drop-shadow(-13px 12px 12px rgba(0,0,0,.34));
 }
 .driver-vehicle-art:not(.has-two-vehicles) .vehicle-primary { width: 92%; height: 92%; }
-
 @keyframes driverVehicleIn {
   from { opacity: 0; transform: translate3d(-120px,34px,0) scaleX(-1) scale(.88) rotate(-2deg); }
   72% { opacity: 1; }
   to { opacity: 1; transform: translate3d(0,0,0) scaleX(-1) scale(1) rotate(0); }
 }
 .driver-art-wrap img { object-fit: contain; object-position: center bottom; }
-
-@media (max-width:1450px) {
-  .driver-vehicle-art { left: 27%; width: min(32vw,470px); height: 27%; }
-}
-@media (max-width:980px) {
-  .driver-vehicle-art { left: 3%; bottom: 2.5%; width: 47vw; height: 22%; opacity: .92; }
-}
-@media (max-width:620px) {
-  .driver-vehicle-art { left: -5%; bottom: 2%; width: 58vw; height: 17%; opacity: .85; }
-  .skill-icon.is-weapon { padding: 5px; }
-}
-
 /* ==========================================================================\n   V20 — driver/vehicle stage spacing and stacked Second Offense vehicles\n   ========================================================================== */
 
 /* Desktop portraits now finish at a protected edge: selector width + its
@@ -4518,7 +3966,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     margin-right: var(--driver-art-inset, 0px);
   }
 }
-
 /* Keep vehicle art GPU-composited while allowing small profile-specific stage
    corrections without interfering with the entrance/exit transform. */
 .driver-vehicle-art {
@@ -4530,7 +3977,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 .driver-vehicle-image.vehicle-primary {
   scale: var(--vehicle-primary-scale, 1);
 }
-
 /* Second Offense: vehicle A remains in its established lower position.
    Vehicle B is exactly 5% smaller and is staged above it rather than behind it. */
 .driver-vehicle-art.has-two-vehicles .vehicle-primary {
@@ -4551,7 +3997,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   opacity: 1;
   filter: saturate(.98) brightness(.98) drop-shadow(-15px 13px 13px rgba(0,0,0,.38));
 }
-
 /* The two-car stack needs a little more clean stage width, but its lower car
    keeps the original anchor and footprint. */
 @media (min-width: 981px) {
@@ -4560,17 +4005,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     width: min(34vw, 545px);
   }
 }
-
-@media (max-width: 980px) {
-  .driver-art-wrap img { margin-right: 0; }
-  .driver-vehicle-art.has-two-vehicles .vehicle-secondary {
-    left: 4%;
-    bottom: 68%;
-    scale: .84;
-  }
-}
-
-
 /* ==========================================================================
    V21 — fine driver composition pass
    ========================================================================== */
@@ -4580,7 +4014,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   /* fuller vertical shadow from top to bottom without changing the art size */
   filter: drop-shadow(18px 0 18px rgba(0,0,0,.26)) drop-shadow(24px 18px 20px rgba(0,0,0,.34));
 }
-
 .driver-vehicle-image.vehicle-primary {
   translate: var(--vehicle-primary-x, 0px) calc(var(--vehicle-primary-y, 0px) * -1);
 }
@@ -4591,7 +4024,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 .driver-vehicle-art.has-two-vehicles .vehicle-primary {
   scale: var(--vehicle-primary-scale, 1);
 }
-
 .driver-vehicle-label {
   position: absolute;
   z-index: 6;
@@ -4633,14 +4065,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   bottom: var(--label-secondary-bottom, 126%);
   transform: translateX(-100%);
 }
-@media (max-width: 980px) {
-  .driver-art-wrap img { translate: 0 0; scale: 1; }
-  .driver-vehicle-label { font-size: .58rem; padding: 3px 8px 2px; }
-  .driver-vehicle-label.label-primary { left: 39% !important; bottom: -1%; transform: translateX(-100%); }
-  .driver-vehicle-label.label-secondary { left: 43% !important; bottom: 116%; transform: translateX(-100%); }
-}
-
-
 /* ==========================================================================
    V22 — Driver 01-13 composition refinement
    ========================================================================== */
@@ -4648,8 +4072,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.96) 0%, rgba(0,0,0,.9) 26%, rgba(0,0,0,.72) 58%, rgba(0,0,0,.32) 82%, transparent 100%);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,.96) 0%, rgba(0,0,0,.9) 26%, rgba(0,0,0,.72) 58%, rgba(0,0,0,.32) 82%, transparent 100%);
 }
-
-
 /* ==========================================================================
    V23 — portrait edge safety and 02/03/04/07/10/11 refinements
    ========================================================================== */
@@ -4660,8 +4082,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   }
 }
 .driver-art-wrap { overflow: visible; }
-
-
 /* ==========================================================================
    V24 — First Offense portrait edge offset and driver 11 car drop
    ========================================================================== */
@@ -4670,8 +4090,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     right: calc(0.4% + 90px + 1.1cm - var(--driver-wrap-right-adjust, 0px));
   }
 }
-
-
 /* ==========================================================================
    V30 — top-anchored faint driver backdrop
    The faded portrait begins at the top edge. It no longer enlarges around the
@@ -4705,8 +4123,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     transform: translate3d(-80px, -5px, 0) scale(.985);
   }
 }
-
-
 /* ==========================================================================
    V39 — square DRIVER BACKGROUND art (14–31), no crop
    ========================================================================== */
@@ -4721,21 +4137,7 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   object-position: center center !important;
   transform: none;
 }
-
 #modalVehicle .vehicle-logo-text { font-size: 1em; }
-
-@media (max-width: 540px) {
-  .profile-modal { padding: 10px; }
-  .profile-visual-stage { min-height: 390px; }
-  #modalImage { left: -2%; width: 67%; height: 92%; }
-  .modal-vehicle-gallery { right: -5%; width: 61%; height: 34%; }
-  .modal-weapon-card { width: 108px; min-height: 136px; padding: 9px; grid-template-rows: auto 72px auto; }
-  #modalWeaponImage { height: 72px; }
-  .modal-weapon-kicker { font-size: .48rem; }
-  #modalWeaponName { font-size: .72rem; }
-}
-
-
 /* ========================================================================== 
    V45 — General layout, navigation, tutorial and download refinements
    ========================================================================== */
@@ -4751,27 +4153,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     justify-content: flex-end;
   }
 }
-
-@media (max-width: 980px) {
-  .driver-progress,
-  .map-progress {
-    left: auto !important;
-    right: 3% !important;
-    bottom: 8px !important;
-    justify-content: flex-end;
-  }
-}
-
-@media (max-width: 620px) {
-  .driver-progress,
-  .map-progress {
-    right: 2% !important;
-    bottom: 6px !important;
-    transform: scale(.88);
-    transform-origin: right bottom;
-  }
-}
-
 /* Header icons stay readable inside their dark icon boxes. */
 .main-nav .nav-icon {
   color: #fff !important;
@@ -4787,7 +4168,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   font-size: 1.25rem !important;
   color: #fff !important;
 }
-
 /* Tutorial labels and long scene titles. */
 .tutorial-tabs button {
   white-space: normal;
@@ -4798,12 +4178,10 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   max-width: 1100px;
   margin-inline: auto;
 }
-
 /* Keep the logo and download buttons untouched; raise only the middle title. */
 .download-copy {
   transform: translateY(-58px);
 }
-
 .download-requirements {
   position: absolute;
   z-index: 8;
@@ -4860,49 +4238,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   color: #171513;
   font-size: .76rem;
 }
-
-@media (max-width: 980px), (max-height: 679px) {
-  .download-copy {
-    transform: none;
-  }
-  .download-requirements {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    transform: none;
-    width: min(900px, 90vw);
-    margin: 0 auto 30px;
-  }
-  .download-requirements ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-  .download-requirements .requirement-size {
-    grid-column: auto;
-  }
-}
-
-@media (max-width: 620px) {
-  .download-requirements {
-    padding-inline: 14px;
-  }
-  .download-requirements ul {
-    grid-template-columns: 1fr;
-    gap: 6px;
-  }
-  .download-requirements li {
-    text-align: center;
-    padding-left: 0;
-  }
-  .download-requirements li::before {
-    position: relative;
-    display: inline-block;
-    top: -1px;
-    left: auto;
-    margin-right: 7px;
-  }
-}
-
-
 /* ========================================================================== 
    V46 — requested final placement, header arrow and compact download layout
    ========================================================================== */
@@ -4918,7 +4253,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     justify-content: flex-end;
   }
 }
-
 /* One clean, upright and centred download arrow. */
 .top-download .download-mark {
   display: grid !important;
@@ -4950,7 +4284,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   width: 18px;
   height: 18px;
 }
-
 /* Keep the requested tutorial title on one line at desktop widths. */
 .tutorial[data-tutorial-level="master"] .section-heading h2 {
   width: max-content;
@@ -4959,7 +4292,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   font-size: clamp(2.15rem, 3.7vw, 4.85rem);
   white-space: nowrap;
 }
-
 /* Restore the original download scene composition and keep the requirements
    as a smaller, tighter panel in the same lower-centre location. */
 .download-copy {
@@ -4997,29 +4329,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   grid-column: auto;
   font-size: .66rem;
 }
-
-@media (max-width: 980px) {
-  .tutorial[data-tutorial-level="master"] .section-heading h2 {
-    width: auto;
-    max-width: 94vw;
-    font-size: clamp(2rem, 6vw, 4.2rem);
-    white-space: normal;
-  }
-  .download-requirements {
-    width: min(720px, 88vw);
-  }
-}
-
-@media (max-width: 620px) {
-  .download-requirements {
-    width: min(440px, 90vw);
-  }
-  .download-requirements ul {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 /* ========================================================================== 
    V47 — final control placement, tutorial title parity and download mirrors
    ========================================================================== */
@@ -5035,14 +4344,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
     justify-content: flex-end;
   }
 }
-
-@media (max-width: 980px) {
-  .driver-progress,
-  .map-progress {
-    right: 1.5% !important;
-  }
-}
-
 /* Use the same font size as the other tutorial headings. Horizontal
    compression keeps the longer title on one line without reducing its height. */
 .tutorial[data-tutorial-level="master"] .section-heading h2 {
@@ -5056,22 +4357,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   transform: scaleX(.82);
   transform-origin: center center;
 }
-
-@media (max-width: 980px) {
-  .tutorial[data-tutorial-level="master"] .section-heading h2 {
-    font-size: clamp(3.4rem,6vw,6.6rem) !important;
-    white-space: nowrap !important;
-    transform: scaleX(.76);
-  }
-}
-
-@media (max-width: 620px) {
-  .tutorial[data-tutorial-level="master"] .section-heading h2 {
-    font-size: 3.4rem !important;
-    transform: scaleX(.58);
-  }
-}
-
 /* One primary download followed by three evenly arranged mirror links. */
 .download-buttons {
   width: 100%;
@@ -5103,18 +4388,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   letter-spacing: .8px;
   opacity: .68;
 }
-
-@media (max-width: 980px) {
-  .mirror-links {
-    grid-template-columns: 1fr;
-    gap: 7px;
-  }
-  .mirror-links .mirror {
-    min-height: 42px;
-  }
-}
-
-
 /* ========================================================================== 
    V50 — publisher rights strip and ordered publisher/rating marks
    ========================================================================== */
@@ -5127,7 +4400,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   align-items: center;
   gap: 18px;
 }
-
 .credits-publisher-logos {
   min-width: 0;
   display: grid;
@@ -5136,7 +4408,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   justify-items: center;
   gap: 7px;
 }
-
 .credits-legal.credits-publisher-strip .credits-mark {
   display: block;
   width: auto;
@@ -5152,7 +4423,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 .credits-legal.credits-publisher-strip .credits-mark-luxoflux { max-width: 72px; height: 34px; }
 .credits-legal.credits-publisher-strip .credits-mark-privacy { max-width: 42px; height: 42px; }
 .credits-legal.credits-publisher-strip .credits-mark-teen { max-width: 54px; height: 42px; }
-
 .credits-rights-copy {
   min-width: 0;
   display: grid;
@@ -5165,37 +4435,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   font: 600 .54rem/1.23 Arial, sans-serif;
   letter-spacing: .02px;
 }
-
-@media (min-width: 901px) and (max-height: 790px) {
-  .credits-legal.credits-publisher-strip {
-    min-height: 70px;
-    padding: 6px 15px;
-    grid-template-columns: minmax(225px, 275px) minmax(0, 1fr);
-    gap: 14px;
-  }
-  .credits-legal.credits-publisher-strip .credits-mark { max-height: 35px; }
-  .credits-legal.credits-publisher-strip .credits-mark-activision { max-width: 61px; height: 21px; }
-  .credits-legal.credits-publisher-strip .credits-mark-luxoflux { max-width: 63px; height: 30px; }
-  .credits-legal.credits-publisher-strip .credits-mark-privacy { max-width: 35px; height: 35px; }
-  .credits-legal.credits-publisher-strip .credits-mark-teen { max-width: 45px; height: 35px; }
-  .credits-legal.credits-publisher-strip .credits-rights-copy p { font-size: .49rem; line-height: 1.2; }
-}
-
-@media (max-width: 900px) {
-  .credits-legal.credits-publisher-strip {
-    grid-template-columns: 1fr;
-    gap: 7px;
-    padding: 10px 15px;
-    text-align: left;
-  }
-  .credits-publisher-logos {
-    width: min(330px, 100%);
-    margin-inline: auto;
-  }
-  .credits-rights-copy { text-align: center; }
-}
-
-
 /* ========================================================================== 
    V51 — definitive Credits publisher strip and compact rights copy
    ========================================================================== */
@@ -5240,17 +4479,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   font: 600 .53rem/1.23 Arial,sans-serif !important;
   letter-spacing: .01px;
 }
-@media (max-width:900px) {
-  .credits-legal.credits-publisher-strip#creditsRightsStrip {
-    grid-template-columns: 1fr;
-    gap: 7px;
-    padding: 9px 14px;
-  }
-  #creditsRightsStrip .credits-publisher-logos { width: min(320px,100%); margin-inline:auto; }
-  #creditsRightsStrip .credits-rights-copy { text-align:center; }
-}
-
-
 /* ========================================================================== 
    V52 — enlarged publisher marks, protected rights copy, and branded footer
    ========================================================================== */
@@ -5343,49 +4571,6 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
   color: rgba(255,255,255,.48) !important;
   margin-inline: 3px !important;
 }
-
-@media (min-width: 901px) and (max-height: 790px) {
-  .credits-legal.credits-publisher-strip#creditsRightsStrip {
-    min-height: 112px !important;
-    grid-template-columns: minmax(330px, 380px) minmax(0, 1fr) !important;
-    column-gap: 25px !important;
-    padding: 8px 18px 7px !important;
-  }
-  #creditsRightsStrip .credits-mark-activision { width: 98px !important; height: 32px !important; }
-  #creditsRightsStrip .credits-mark-luxoflux { width: 94px !important; height: 47px !important; }
-  #creditsRightsStrip .credits-mark-privacy { width: 52px !important; height: 70px !important; }
-  #creditsRightsStrip .credits-mark-teen { width: 88px !important; height: 49px !important; }
-  #creditsRightsStrip .credits-rights-copy p { font-size: .50rem !important; }
-  #creditsRightsStrip .credits-asset-credit { font-size: .56rem !important; }
-  #creditsRightsStrip .credits-rights-signoff { font-size: .57rem !important; }
-}
-
-@media (max-width: 900px) {
-  .credits-legal.credits-publisher-strip#creditsRightsStrip {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto auto auto !important;
-    gap: 8px !important;
-    padding: 11px 15px 9px !important;
-  }
-  #creditsRightsStrip .credits-publisher-logos {
-    width: min(430px, 100%) !important;
-    margin-inline: auto !important;
-  }
-  #creditsRightsStrip .credits-rights-copy {
-    padding-left: 0 !important;
-    text-align: center !important;
-  }
-  #creditsRightsStrip .credits-brand-footer {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 5px !important;
-  }
-  #creditsRightsStrip .credits-brand-footer p {
-    white-space: normal !important;
-    text-align: center !important;
-  }
-}
-
 /* ========================================================================== 
    V53 — SOCIAL contact scene and improved Credits legal readability
    ========================================================================== */
@@ -5601,14 +4786,1178 @@ body.scene-engine-ready.all-ambient-animations .scene-section:not(.scene-active)
 body.scene-engine-ready .social.scene-entering .social-card { animation: cardIn .58s cubic-bezier(.16,.84,.2,1) both; }
 body.scene-engine-ready .social.scene-entering .social-card:nth-child(2) { animation-delay: .08s; }
 body.scene-engine-ready .social.scene-entering .social-card:nth-child(3) { animation-delay: .16s; }
-
 /* The legal publisher copy was too small in V52. */
 #creditsRightsStrip .credits-rights-copy p {
   font-size: .68rem !important;
   line-height: 1.38 !important;
   letter-spacing: .02px !important;
 }
+/* ==========================================================================
+   V54 — Larger SOCIAL cards, contact buttons and readable descriptions
+   ========================================================================== */
+.social-card-heading small { font-size: .74rem; }
+.social-card-heading p { font-size: .86rem; line-height: 1.52; }
+.social-link { min-height: 57px; grid-template-columns: 42px minmax(0,1fr); padding: 8px 12px; gap: 12px; }
+.social-link-icon { width: 42px; height: 42px; }
+.social-link-icon svg { width: 25px; height: 25px; }
+.social-link small { font-size: .57rem; }
+.social-link b { font-size: .82rem; line-height: 1.05; }
+/* ========================================================================== 
+   V57 — Home right-side artwork + video playback refinements
+   ========================================================================== */
+.hero-right-image {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 54%;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(190,183,169,0) 0%, rgba(14,14,13,.08) 19%, rgba(9,10,11,.12) 100%),
+    url('assets/backgrounds/hero-chico-v57.jpg') center center / cover no-repeat;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 10%, #000 27%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 10%, #000 27%, #000 100%);
+  opacity: .96;
+  filter: saturate(1.08) contrast(1.04);
+  transform: scale(1.015);
+  transform-origin: center right;
+  animation: v57HeroRightDrift 16s ease-in-out infinite alternate;
+}
+@keyframes v57HeroRightDrift {
+  from { background-position: 47% center; transform: scale(1.015); }
+  to   { background-position: 54% center; transform: scale(1.055); }
+}
+.news-shot-sheen {
+  transition: opacity .2s ease;
+}
+.news-slide.is-video-playing .news-shot-sheen {
+  opacity: 0;
+  animation-play-state: paused;
+}
+.news-slide.has-video .news-slide-caption h3 {
+  text-transform: none;
+}
+/* ========================================================================== 
+   V58 — Remove the slanted road panel + hard-stop video sheen while playing
+   ========================================================================== */
+.hero-poster .poster-road {
+  display: none !important;
+}
+.news-slide.is-video-playing .news-shot-sheen,
+.news-shot-sheen[hidden] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  animation: none !important;
+  transform: none !important;
+}
+/* ========================================================================== 
+   V59 — MORE INFORMATION PANELS + NEW UPDATE VIDEO
+   ========================================================================== */
 
+.news-showcase {
+  height: clamp(520px, 66vh, 650px);
+}
+.news-slide {
+  display: flex;
+  flex-direction: column;
+}
+.news-more-row,
+.tutorial-more-row {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px 15px;
+  background:
+    linear-gradient(90deg, rgba(255,77,16,.13), transparent 24% 76%, rgba(255,177,20,.12)),
+    linear-gradient(180deg, #171513, #0d0d0d);
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+.more-information-button {
+  position: relative;
+  min-width: 210px;
+  min-height: 42px;
+  padding: 11px 28px 10px;
+  border: 1px solid rgba(255,197,50,.72);
+  color: #111;
+  background: linear-gradient(110deg, #ffd629 0%, #ff9c12 62%, #ff5b12 100%);
+  clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  box-shadow:
+    0 10px 22px rgba(0,0,0,.34),
+    inset 0 1px 0 rgba(255,255,255,.72);
+  font: 950 .72rem/1 Arial,sans-serif;
+  letter-spacing: 1.7px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
+}
+.more-information-button::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 5px;
+  height: 2px;
+  background: rgba(20,15,8,.5);
+  transform: scaleX(.36);
+  transform-origin: center;
+  transition: transform .18s ease;
+}
+.more-information-button:hover,
+.more-information-button:focus-visible {
+  transform: translateY(-2px);
+  filter: saturate(1.12) brightness(1.04);
+  box-shadow: 0 14px 30px rgba(0,0,0,.42), 0 0 24px rgba(255,141,16,.22);
+  outline: none;
+}
+.more-information-button:hover::after,
+.more-information-button:focus-visible::after {
+  transform: scaleX(1);
+}
+.news-slide.is-prev .news-more-row,
+.news-slide.is-next .news-more-row {
+  opacity: .88;
+}
+.news-slide.is-far-left .more-information-button,
+.news-slide.is-far-right .more-information-button {
+  pointer-events: none;
+}
+.tutorial-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.tutorial-card-media {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.tutorial-card-media img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.tutorial-card-media h3 {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 58px 18px 15px;
+  color: #fff;
+  background: linear-gradient(transparent,rgba(0,0,0,.9));
+  font-family: Impact,"Arial Narrow Bold",sans-serif;
+  letter-spacing: .8px;
+}
+.tutorial-more-row {
+  flex: 0 0 auto;
+  padding: 13px 15px 16px;
+}
+.tutorial-more-row .more-information-button {
+  width: min(245px, 92%);
+}
+body.information-modal-open {
+  overflow: hidden;
+}
+.information-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2600;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2,5,8,.9);
+  backdrop-filter: blur(12px) saturate(.8);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .24s ease, visibility .24s ease;
+}
+.information-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.information-panel {
+  --information-accent: #ff9e16;
+  position: relative;
+  width: min(1040px, 96vw);
+  height: min(92vh, 900px);
+  max-height: min(92vh, 900px);
+  display: grid;
+  grid-template-rows: minmax(230px, 30vh) minmax(0,1fr);
+  overflow: hidden;
+  color: #f5f1ea;
+  background:
+    linear-gradient(115deg, rgba(255,92,18,.08), transparent 42%),
+    #0d1115;
+  border: 1px solid rgba(255,177,35,.65);
+  clip-path: polygon(20px 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%,0 20px);
+  box-shadow: 0 38px 110px rgba(0,0,0,.78), inset 0 1px 0 rgba(255,255,255,.16);
+  transform: translateY(22px) scale(.975);
+  transition: transform .3s cubic-bezier(.16,.84,.2,1);
+  isolation: isolate;
+}
+.information-modal.is-open .information-panel {
+  transform: translateY(0) scale(1);
+}
+.information-panel::before {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  pointer-events: none;
+  border-top: 5px solid #ff5a13;
+  background:
+    linear-gradient(115deg, transparent 0 71%, rgba(255,165,18,.09) 71.2% 76%, transparent 76.2%),
+    repeating-linear-gradient(120deg, transparent 0 74px, rgba(255,255,255,.025) 74px 76px);
+}
+.information-backdrop {
+  position: relative;
+  grid-row: 1;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: saturate(1.08) contrast(1.04);
+}
+.information-backdrop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(5,8,11,.18), rgba(5,8,11,.45)),
+    linear-gradient(180deg, rgba(5,8,11,.08) 0%, rgba(5,8,11,.2) 48%, #0d1115 100%);
+}
+.information-backdrop::after {
+  content: "";
+  position: absolute;
+  right: 7%;
+  top: -35%;
+  width: 125px;
+  height: 180%;
+  transform: rotate(24deg);
+  background: linear-gradient(180deg, rgba(255,210,33,.72), rgba(255,76,15,.38));
+  opacity: .32;
+  box-shadow: 0 0 0 18px rgba(0,0,0,.22);
+}
+.information-heading {
+  position: absolute;
+  z-index: 7;
+  left: clamp(24px,5vw,58px);
+  right: clamp(64px,8vw,96px);
+  top: clamp(42px,8vh,88px);
+  color: #fff;
+  text-shadow: 0 4px 18px rgba(0,0,0,.75);
+}
+.information-kicker {
+  margin: 0 0 10px;
+  color: #ffc224;
+  font: 950 .72rem/1 Arial,sans-serif;
+  letter-spacing: 2.4px;
+}
+.information-heading h2 {
+  max-width: 900px;
+  margin: 0;
+  color: #fff;
+  font-family: Impact,"Arial Narrow Bold",sans-serif;
+  font-size: clamp(2rem,4vw,4.25rem);
+  line-height: .95;
+  letter-spacing: .8px;
+}
+.information-close {
+  position: absolute;
+  z-index: 12;
+  top: 16px;
+  right: 17px;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255,211,76,.72);
+  color: #fff;
+  background: rgba(8,12,16,.84);
+  box-shadow: 0 12px 26px rgba(0,0,0,.36);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .18s ease, background .18s ease;
+}
+.information-close:hover,
+.information-close:focus-visible {
+  transform: rotate(5deg) scale(1.04);
+  background: #e84912;
+  outline: none;
+}
+.information-scroll {
+  position: relative;
+  z-index: 6;
+  grid-row: 2;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: clamp(28px,4vw,46px) clamp(25px,5vw,62px) clamp(38px,5vw,62px);
+  scrollbar-width: thin;
+  scrollbar-color: #ff9f17 #171b1f;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(255,127,14,.13), transparent 30%),
+    linear-gradient(180deg,#0d1115,#080b0e);
+  font-size: clamp(.97rem,1.25vw,1.08rem);
+  line-height: 1.78;
+}
+.information-scroll::-webkit-scrollbar { width: 10px; }
+.information-scroll::-webkit-scrollbar-track { background: #171b1f; }
+.information-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ffc425,#ff5a12);
+  border: 2px solid #171b1f;
+}
+.information-scroll h3 {
+  margin: 0 0 20px;
+  color: #fff;
+  font-family: Impact,"Arial Narrow Bold",sans-serif;
+  font-size: clamp(1.75rem,3vw,2.8rem);
+  line-height: 1.02;
+  letter-spacing: .7px;
+}
+.information-scroll h4 {
+  margin: 26px 0 14px;
+  color: #ffc224;
+  font-size: 1.05rem;
+  letter-spacing: .3px;
+}
+.information-scroll p {
+  margin: 0 0 20px;
+  color: #dce1e4;
+}
+.information-scroll ul {
+  list-style: none;
+  margin: 0 0 26px;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.information-scroll li {
+  position: relative;
+  margin: 0;
+  padding: 13px 16px 13px 36px;
+  color: #eef1f2;
+  background: linear-gradient(90deg, rgba(255,141,17,.11), rgba(255,255,255,.025));
+  border-left: 3px solid #ff9c16;
+}
+.information-scroll li::before {
+  content: "•";
+  position: absolute;
+  left: 17px;
+  top: 11px;
+  color: #ffc224;
+  font-size: 1.2rem;
+}
+.information-scroll a {
+  color: #ffc224;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+/* ========================================================================== 
+   V60 — Responsive NEWS cards + clean information typography
+   Keeps the existing section artwork, headings, tabs and animations intact.
+   ========================================================================== */
+
+/* Desktop/tablet NEWS card system rebuilt around the real viewport space. */
+.news-showcase {
+  height: 100%;
+  min-height: 0;
+}
+.news-slide {
+  top: clamp(8px, 1.45vh, 16px);
+  width: min(620px, 58vw);
+  display: flex;
+  flex-direction: column;
+}
+.news-slide.is-current {
+  left: 50%;
+  transform: translate3d(-50%,0,0) scale(1);
+}
+.news-slide.is-prev {
+  left: 8%;
+  transform: translate3d(-50%,7%,0) scale(.66);
+}
+.news-slide.is-next {
+  left: 92%;
+  transform: translate3d(-50%,7%,0) scale(.66);
+}
+.news-shot-frame {
+  flex: 0 0 auto;
+  aspect-ratio: 16 / 9;
+}
+.news-slide-caption {
+  flex: 0 0 auto;
+  min-height: 84px;
+  padding: 10px 20px 12px;
+  display: grid;
+  grid-template-rows: auto minmax(0,1fr) auto;
+  align-content: center;
+}
+.news-slide-caption span {
+  font-size: .62rem;
+  letter-spacing: 1.8px;
+}
+.news-slide-caption h3 {
+  margin: 5px 0 4px;
+  font-size: clamp(1.12rem, 1.4vw, 1.42rem);
+  line-height: 1.05;
+  text-wrap: balance;
+}
+.news-more-row {
+  flex: 0 0 56px;
+  min-height: 56px;
+  padding: 8px 14px 10px;
+}
+.news-more-row .more-information-button {
+  min-width: 192px;
+  min-height: 38px;
+  padding: 9px 22px 8px;
+  font-size: .67rem;
+  letter-spacing: 1.35px;
+}
+/* Keep arrows vertically centered on the smaller, complete card. */
+.news-arrow {
+  top: 40%;
+}
+/* Information window: the header is now a proper grid layer instead of an
+   absolutely positioned block that can spill into the article text. */
+.information-panel {
+  width: min(1000px, 94vw);
+  height: min(88svh, 840px);
+  max-height: min(88svh, 840px);
+  grid-template-rows: minmax(190px, 25vh) minmax(0,1fr);
+}
+.information-heading {
+  position: relative;
+  grid-row: 1;
+  align-self: end;
+  z-index: 7;
+  left: auto;
+  right: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
+  padding: 48px clamp(72px, 8vw, 96px) 24px clamp(28px, 5vw, 56px);
+  overflow: hidden;
+  pointer-events: none;
+}
+.information-kicker {
+  margin-bottom: 8px;
+  font-size: .68rem;
+  letter-spacing: 2.1px;
+}
+.information-heading h2 {
+  max-width: 880px;
+  margin: 0;
+  font-size: clamp(1.7rem, 2.55vw, 2.85rem);
+  line-height: 1.01;
+  letter-spacing: .45px;
+  text-wrap: balance;
+  overflow-wrap: normal;
+}
+.information-scroll {
+  padding-top: clamp(26px, 3vw, 38px);
+  font-size: clamp(.96rem, 1.08vw, 1.05rem);
+  line-height: 1.72;
+}
+.information-scroll h3 {
+  margin: 0 0 18px;
+  max-width: 880px;
+  font-size: clamp(1.35rem, 1.8vw, 1.95rem);
+  line-height: 1.12;
+  letter-spacing: .35px;
+  text-wrap: balance;
+}
+/* Short desktop windows receive a further proportional reduction instead of
+   clipping the action row below the visible scene. */
+@media (min-width: 901px) and (max-height: 790px) {
+  .news-slide {
+    width: min(570px, 55vw);
+    top: 6px;
+  }
+  .news-slide-caption {
+    min-height: 76px;
+    padding: 8px 18px 10px;
+  }
+  .news-slide-caption h3 {
+    font-size: clamp(1rem, 1.28vw, 1.27rem);
+  }
+  .news-more-row {
+    flex-basis: 50px;
+    min-height: 50px;
+    padding: 6px 12px 8px;
+  }
+  .news-more-row .more-information-button {
+    min-height: 35px;
+    padding-block: 8px 7px;
+  }
+}
+/* =====================================================================
+   YOUTUBE EMBED — news carousel
+   ===================================================================== */
+.news-youtube-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-youtube-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s ease, filter .4s ease;
+}
+.news-youtube-wrap:hover .news-youtube-thumb {
+  transform: scale(1.04);
+  filter: brightness(.75);
+}
+.news-youtube-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 72px;
+  height: 52px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform .2s ease, filter .2s ease;
+  filter: drop-shadow(0 4px 18px rgba(0,0,0,.7));
+}
+.news-youtube-play:hover {
+  transform: translate(-50%, -50%) scale(1.14);
+  filter: drop-shadow(0 6px 24px rgba(0,0,0,.9));
+}
+.news-youtube-play svg {
+  width: 100%;
+  height: 100%;
+}
+.news-youtube-play .yt-play-bg {
+  fill: #ff0000;
+  transition: fill .2s ease;
+}
+.news-youtube-play:hover .yt-play-bg {
+  fill: #cc0000;
+}
+.news-youtube-play .yt-play-arrow {
+  fill: #fff;
+}
+.news-youtube-iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   Moved to the end of the stylesheet so mobile/tablet breakpoints always win
+   the cascade over base rules declared later in the file (equal specificity,
+   source order decides). Internal order between media blocks is unchanged.
+   ========================================================================== */
+
+@media (max-width: 1260px) {
+  .main-nav a { min-width: 102px; padding-right: 9px; }
+  .nav-copy small { display: none; }
+  .top-download { min-width: 174px; }
+  .driver-copy { left: 2%; width: 39vw; }
+  .driver-art-wrap { left: 37%; right: 10%; }
+  .driver-selector { right: .6%; }
+}
+@media (max-width: 1050px) {
+  .main-nav { gap: 4px; margin-left: 1vw; }
+  .main-nav a { min-width: 48px; width: 48px; padding: 0; justify-content: center; }
+  .nav-copy { display: none; }
+  .top-download { min-width: 165px; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-poster { position: absolute; right: -15%; opacity: .33; width: 70%; z-index: -1; }
+  .news-grid { grid-template-columns: repeat(2,1fr); }
+  .news-card:last-child { grid-column: span 2; }
+  .driver-copy h2 { font-size: clamp(4.5rem,8vw,7rem); }
+  .driver-copy { width: 42vw; }
+  .driver-art-wrap { left: 38%; }
+  .creator { grid-template-columns: 1fr; }
+  .creator-art { display: none; }
+  .download-inner { grid-template-columns: .7fr 1fr; }
+  .download-buttons { grid-column: 2; }
+  .download-diagonal { inset: -20% 66% -20% -25%; }
+}
+@media (max-width: 820px) {
+  .topbar { --header-h: 68px; }
+  .topbar.is-compact { --header-h: 56px; }
+  .brand { width: 115px; height: 60px; }
+  .brand img { width: 110px; height: 60px; }
+  .top-download { display: none; }
+  .nav-toggle { display: block; }
+  .main-nav {
+    position: absolute;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 12px 18px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    height: auto;
+    background: rgba(5,8,12,.98);
+    transform: translateY(-145%);
+    transition: .3s;
+    z-index: -1;
+  }
+  .main-nav.is-open { transform: translateY(0); }
+  .main-nav a { width: 100%; min-width: 0; height: 54px; justify-content: flex-start; padding: 0 12px; }
+  .nav-copy { display: flex; }
+  .nav-copy small { display: block; }
+  .hero { padding-top: 68px; }
+  .hero-copy { padding-top: 10vh; }
+  .hero-logo { width: 90%; }
+  .hero-poster { right: -38%; width: 100%; }
+  .section-shell { padding: 80px 5vw; }
+  .news-tabs { position: relative; top: auto; right: auto; margin-top: 22px; }
+  .news-grid { grid-template-columns: 1fr; }
+  .news-card:last-child { grid-column: auto; }
+
+  .drivers { height: auto; min-height: 1080px; }
+  .driver-copy { top: 5%; left: 5%; width: 76%; }
+  .driver-copy h2 { font-size: clamp(4.4rem,15vw,7rem); max-width: 80vw; }
+  .driver-kicker { font-size: 1rem; }
+  .driver-tagline { max-width: 70vw; }
+  .driver-art-wrap { left: 8%; right: 14%; top: 37%; height: 63%; }
+  .driver-art-wrap img { height: 100%; }
+  .driver-color-world { left: 16%; top: 33%; }
+  .driver-slash { top: 25%; }
+  .slash-cyan { left: 23%; }.slash-white { left: 24.5%; }.slash-accent { left: 27%; }
+  .driver-selector { top: 44%; right: 1%; height: 48%; width: 72px; }
+  .driver-progress { left: 5%; bottom: 12px; }
+  .driver-ghost { top: 34%; font-size: 10rem; }
+  .skill-list { width: 370px; }
+  .skill { min-height: 64px; grid-template-columns: 64px 1fr; }
+  .skill-icon { width: 64px; height: 64px; }
+  .view-profile { width: 245px; min-height: 48px; }
+
+  .creator { min-height: auto; }
+  .tutorial-grid { grid-template-columns: repeat(2,1fr); }
+  .feature-card { min-width: 86%; }
+  .download-inner { grid-template-columns: 1fr; padding: 70px 0; }
+  .download-inner > img { max-width: 300px; }
+  .download-buttons { grid-column: auto; }
+  .download-diagonal { inset: -10% 55% 55% -30%; }
+  footer { grid-template-columns: 1fr; text-align: center; }
+  footer img { margin: auto; }
+  .profile-card { grid-template-columns: 1fr; max-height: 94vh; overflow: auto; min-height: 0; }
+  .profile-visual-stage { min-height: 470px; }
+  #modalImage { left: 4%; width: 60%; height: 94%; }
+  .modal-vehicle-gallery { right: 1%; bottom: 4%; width: 54%; height: 36%; }
+  .modal-weapon-card { right: 3%; top: 4%; width: 130px; min-height: 155px; grid-template-rows: auto 87px auto; }
+  #modalWeaponImage { height: 87px; }
+  .profile-info-panel { padding: 30px 28px 34px !important; }
+  .profile-card h2 { font-size: 3rem; }
+}
+@media (max-width: 540px) {
+  .main-nav { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; }
+  .action { width: 100%; }
+  .section-heading h2,.creator-copy h2,.download h2 { font-size: 3.4rem; }
+  .news-tabs { overflow: auto; }
+  .tab { padding: 14px 22px; white-space: nowrap; }
+  .drivers { min-height: 1040px; }
+  .driver-copy { width: 88%; }
+  .driver-copy h2 { font-size: 4.2rem; }
+  .skill-list { width: calc(100vw - 110px); }
+  .skill h4 { font-size: .98rem; }
+  .skill p { display: none; }
+  .view-profile { width: calc(100vw - 110px); }
+  .driver-art-wrap { left: -2%; right: 16%; top: 41%; height: 59%; }
+  .driver-color-world { left: 4%; top: 38%; }
+  .driver-selector { width: 62px; top: 48%; height: 43%; }
+  .driver-progress small { display: none; }
+  .tutorial-grid { grid-template-columns: 1fr; }
+  .tutorial-tabs { overflow: auto; }
+  .feature-stage { padding: 12px 40px; }
+  .feature-card { min-width: 96%; }
+  .feature-caption h3 { font-size: 1.35rem; }
+  .feature-caption p { font-size: .8rem; }
+  .creator-points { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+@media (max-width: 1050px) {
+  .topbar { height: 72px; }
+  .brand { width: 126px; height: 68px; }
+  .brand img { width: 118px; height: 66px; }
+  .main-nav {
+    justify-content: flex-start;
+  }
+  .main-nav a { min-width: 54px; width: 54px; padding: 0; justify-content: center; }
+  .nav-copy { display: none; }
+  .top-download { min-width: 58px; width: 58px; padding: 0; justify-content: center; }
+  .top-download > span:last-child { display: none; }
+  .feature-card { min-width: 78%; }
+}
+@media (max-width: 780px) {
+  .main-nav {
+    background: linear-gradient(155deg,#171b21,#080b0f);
+    border: 1px solid rgba(255,135,16,.28);
+  }
+  .main-nav a { width: 100%; min-width: 0; justify-content: flex-start; padding: 0 14px; }
+  .main-nav a .nav-copy { display: flex; }
+  .top-download { display: none; }
+  .news-tabs { position: relative; top: auto; right: auto; margin-top: 26px; }
+  .section-heading { padding-left: 18px; }
+  .feature-stage { padding: 20px 44px; }
+  .feature-card { min-width: 92%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .news::before,.tutorial::before,.features::before,.news::after,.tutorial::after,.features::after,
+  .section-shell:not(.creator) .brush,.hero-bg,.hero::before,.hero-speed,.hero-logo,.hero-poster::before,
+  .poster-ring,.poster-road,.creator::before,.creator::after,.creator-collage::before,.creator-collage::after,
+  .download::before,.download-diagonal,.download-inner > img { animation: none !important; }
+}
+@media (prefers-reduced-motion: reduce) { .v6-embers { display: none; } }
+@media (max-width: 1050px) {
+  .feature-stage { padding-inline: 70px; }
+  .feature-card { flex-basis: min(760px, 76vw); }
+  .feature-impact { width: 55vw; right: -10vw; opacity: .28; }
+  .download-tire-trail { left: 17%; opacity: .46; }
+}
+@media (max-width: 780px) {
+  .feature-stage { padding: 22px 48px 32px; }
+  .feature-viewport { -webkit-mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); mask-image: linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent); }
+  .feature-track { gap: 18px; }
+  .feature-card { flex-basis: 82vw; }
+  .feature-arrow { width: 48px; height: 64px; }
+  .feature-arrow.left { left: 1px; }
+  .feature-arrow.right { right: 1px; }
+  .feature-arrow svg { width: 30px; height: 30px; }
+  .feature-caption { padding: 92px 22px 22px; }
+  .feature-impact { width: 78vw; opacity: .18; top: 14%; }
+  .impact-wheel { width: 82px; border-width: 12px; }
+  .download-tire-trail { left: 20%; bottom: -210px; width: 150px; opacity: .34; }
+  .tire-line { width: 52px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .feature-impact *, .download-tire-trail, .tire-line { animation: none !important; }
+}
+@media (max-width: 820px) {
+  .scene-panel { left: 39%; opacity: .82; }
+  .scene-ghost { font-size: clamp(6rem,24vw,12rem); top: 11%; }
+  .scene-slash { width: 80vw; right: -26vw; }
+  .creator .scene-panel,.features .scene-panel { right: 43%; }
+  .driver-selector { width: 72px; top: 50%; height: auto; }
+  .driver-thumbs { grid-template-rows: repeat(4,72px); }
+  .driver-thumb { width: 72px; height: 72px; }
+}
+@media (max-width: 540px) {
+  .scene-panel { left: 31%; opacity: .75; }
+  .scene-halftone { width: 80vw; }
+  .driver-selector { width: 62px; top: 53%; }
+  .driver-thumbs { grid-template-rows: repeat(4,62px); gap: 6px; }
+  .driver-thumb { width: 62px; height: 62px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v8-scene-decor *, .v6-embers i { animation: none !important; }
+}
+@media (min-width: 901px) and (min-height: 680px) {
+  body.scene-engine-ready main > .scene-section {
+    min-height: calc(100vh - 58px);
+    contain: layout paint style;
+  }
+
+  body.scene-engine-ready main > .hero.scene-section {
+    min-height: 100vh;
+  }
+
+  body.scene-engine-ready main > .drivers.scene-section {
+    height: calc(100vh - 58px);
+    min-height: calc(100vh - 58px);
+  }
+
+}
+@media (max-width: 900px), (max-height: 679px) {
+  .scene-transition { display: none; }
+  .scene-section { scroll-margin-top: 68px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scene-transition { display: none !important; }
+  body.scene-engine-ready .scene-section [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+@media (min-width: 1321px) {
+  .main-nav { gap: 6px; margin-left: 1.2vw; }
+  .main-nav a { padding-inline: 9px; }
+  .top-download { min-width: 184px; padding-inline: 17px; }
+}
+@media (min-width: 901px) and (min-height: 680px) {
+  body.scene-engine-ready main > .maps.scene-section { height: calc(100vh - 58px); min-height: calc(100vh - 58px); }
+  body.scene-engine-ready main > .credits.scene-section { min-height: calc(100vh - 58px); }
+}
+@media (max-width: 1100px) {
+  .map-info-card { width: 45vw; }
+  .map-white-highlight { width: 37vw; right: 11%; }
+  .map-info-card h2 { font-size: clamp(3.2rem,6.3vw,5.8rem); }
+  .credits-grid { gap: 10px; }
+}
+@media (max-width: 820px) {
+  .news-tabs { grid-template-columns: repeat(2, minmax(165px,1fr)); overflow-x: auto; }
+  .maps { height: auto; min-height: 1120px; }
+  .map-layout { width: 100%; }
+  .map-info-card { left: 5%; top: 5%; width: 76%; padding: 16px 18px 20px; }
+  .map-mini-frame { height: 180px; }
+  .map-info-card h2 { font-size: clamp(3.5rem,11vw,6rem); }
+  .map-white-highlight { top: 61%; left: 5%; right: auto; width: 72%; }
+  .map-selector { top: 29%; right: 1.5%; width: 72px; height: 52%; }
+  .map-progress { left: 5%; bottom: 18px; }
+  .map-orange-world { width: 74%; right: -29%; }
+  .map-ghost { bottom: 6%; font-size: 9rem; }
+  .credits { padding: 86px 5vw 22px; }
+  .credits-header { margin-left: 0; }
+  .credits-grid { grid-template-columns: 1fr; }
+  .credit-card { min-height: 150px; }
+  .credits-legal { grid-template-columns: 130px 1fr; }
+  .credits-legal img { width: 120px; }
+  .credits-footer-strip { grid-template-columns: 105px 1fr; }
+  .credits-footer-strip span { grid-column: 1 / -1; text-align: center; }
+}
+@media (max-width: 540px) {
+  .maps { min-height: 1080px; }
+  .map-info-card { width: 78%; left: 4%; }
+  .map-mini-frame { height: 145px; }
+  .map-description { font-size: .72rem; }
+  .map-stat-grid { gap: 5px; }
+  .map-stat-grid article { padding: 7px; }
+  .map-white-highlight { left: 4%; width: 78%; padding: 18px 22px 20px 31px; }
+  .map-selector { width: 62px; top: 31%; height: 48%; }
+  .map-progress small { display: none; }
+  .credits-header h2 { font-size: 4.2rem; }
+  .credits-legal { grid-template-columns: 1fr; text-align: center; }
+  .credits-legal img { margin: auto; }
+  .credits-footer-strip { grid-template-columns: 1fr; text-align: center; }
+  .credits-footer-strip img { margin: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-background,.map-orange-world,.map-grain,.map-speed-line,.map-ghost,.map-info-card,.map-white-highlight,.map-progress i b { animation: none !important; }
+}
+@media (max-width: 820px) { .news .news-grid { grid-template-columns: 1fr; } }
+@media (min-width: 901px) and (max-height: 780px) {
+  .credits { padding-top: 62px; padding-bottom: 12px; }
+  .credits-header h2 { font-size: 5.3rem; }
+  .credits-header > p:last-child { margin-top: 10px; font-size: .74rem; }
+  .credits-grid { margin-top: 15px; }
+  .credit-card { min-height: 142px; padding: 17px 20px; }
+  .credit-card h3 { margin: 5px 0 8px; font-size: 1.75rem; }
+  .credit-card p { font-size: .67rem; }
+  .credits-legal { margin-top: 9px; padding-block: 8px; }
+  .credits-legal img { height: 60px; }
+  .credits-footer-strip { margin-top: 8px; min-height: 54px; }
+  .credits-footer-strip img { height: 45px; }
+}
+@media (max-width: 980px) {
+  .news-tire-depth { width: 80vw; opacity: .12; }
+  .news-skid-curves { width: 78vw; opacity: .1; }
+  .tutorial-fire-wheel { width: 58vw; right: -18vw; opacity: .42; }
+  .tutorial-bottom-skids { width: 100vw; bottom: -9%; opacity: .13; }
+  .download-track-wall img { width: 66vw; min-width: 500px; }
+}
+@media (max-width: 650px) {
+  .news-tire-depth { top: 10%; width: 105vw; left: -32vw; opacity: .09; }
+  .news-skid-curves { width: 105vw; right: -42vw; bottom: -7%; opacity: .08; }
+  .tutorial-fire-wheel { width: 82vw; right: -42vw; top: 24%; opacity: .3; }
+  .tutorial-bottom-skids { width: 138vw; bottom: -2%; opacity: .1; }
+  .download-track-wall { opacity: .17; inset: -8% -32%; }
+  .download-track-wall img { width: 104vw; min-width: 430px; }
+  .download-track-wall .track-copy-b { left: 43%; }
+  .download-track-wall .track-copy-c { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tutorial-fire-wheel-glow,
+  .tutorial-fire-wheel-heat { animation: none !important; }
+}
+@media (max-width: 980px) {
+  .download-track-wall .track-copy-b {
+    left: 27% !important;
+    bottom: -66% !important;
+    width: 68vw !important;
+    min-width: 560px !important;
+    height: 220% !important;
+    transform: rotate(25deg) skewX(-2deg) scaleX(.95) !important;
+  }
+}
+@media (max-width: 650px) {
+  .download-track-wall .track-copy-b {
+    left: 14% !important;
+    bottom: -58% !important;
+    width: 112vw !important;
+    min-width: 470px !important;
+    height: 205% !important;
+    transform: rotate(22deg) scaleX(.92) !important;
+  }
+}
+@media (max-width: 900px), (max-height: 679px) {
+  .news-showcase { width: 100%; height: 520px; margin: 26px 0 0; overflow: hidden; }
+  .news-slide { width: min(760px,86vw); }
+  .news-slide.is-prev { left: -8%; }
+  .news-slide.is-next { left: 108%; }
+  .news-arrow-prev { left: 2%; }
+  .news-arrow-next { right: 2%; }
+}
+@media (max-width: 620px) {
+  .news-showcase { height: 440px; }
+  .news-slide { width: 88vw; top: 7%; }
+  .news-slide.is-prev,.news-slide.is-next { opacity: .18; }
+  .news-arrow { top: 40%; width: 48px; height: 74px; }
+  .news-arrow-label { display: none; }
+  .news-arrow svg { width: 31px; height: 31px; }
+  .news-slide-caption { min-height: 82px; padding-inline: 16px; }
+  .news-slide-caption h3 { font-size: 1.15rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .news-slide,.news-shot-frame img,.news-arrow { transition: none !important; }
+  .news-shot-sheen,.news-slide-enter { animation: none !important; }
+}
+@media (max-width: 820px) {
+  .driver-auto-toggle { min-width: 60px; height: 23px; padding: 0 6px; font-size: .52rem; }
+  .driver-progress #driverAutoDelay { display: none; }
+}
+@media (max-width:1450px) {
+  .driver-vehicle-art { left: 27%; width: min(32vw,470px); height: 27%; }
+}
+@media (max-width:980px) {
+  .driver-vehicle-art { left: 3%; bottom: 2.5%; width: 47vw; height: 22%; opacity: .92; }
+}
+@media (max-width:620px) {
+  .driver-vehicle-art { left: -5%; bottom: 2%; width: 58vw; height: 17%; opacity: .85; }
+  .skill-icon.is-weapon { padding: 5px; }
+}
+@media (max-width: 980px) {
+  .driver-art-wrap img { margin-right: 0; }
+  .driver-vehicle-art.has-two-vehicles .vehicle-secondary {
+    left: 4%;
+    bottom: 68%;
+    scale: .84;
+  }
+}
+@media (max-width: 980px) {
+  .driver-art-wrap img { translate: 0 0; scale: 1; }
+  .driver-vehicle-label { font-size: .58rem; padding: 3px 8px 2px; }
+  .driver-vehicle-label.label-primary { left: 39% !important; bottom: -1%; transform: translateX(-100%); }
+  .driver-vehicle-label.label-secondary { left: 43% !important; bottom: 116%; transform: translateX(-100%); }
+}
+@media (max-width: 540px) {
+  .profile-modal { padding: 10px; }
+  .profile-visual-stage { min-height: 390px; }
+  #modalImage { left: -2%; width: 67%; height: 92%; }
+  .modal-vehicle-gallery { right: -5%; width: 61%; height: 34%; }
+  .modal-weapon-card { width: 108px; min-height: 136px; padding: 9px; grid-template-rows: auto 72px auto; }
+  #modalWeaponImage { height: 72px; }
+  .modal-weapon-kicker { font-size: .48rem; }
+  #modalWeaponName { font-size: .72rem; }
+}
+@media (max-width: 980px) {
+  .driver-progress,
+  .map-progress {
+    left: auto !important;
+    right: 3% !important;
+    bottom: 8px !important;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 620px) {
+  .driver-progress,
+  .map-progress {
+    right: 2% !important;
+    bottom: 6px !important;
+    transform: scale(.88);
+    transform-origin: right bottom;
+  }
+}
+@media (max-width: 980px), (max-height: 679px) {
+  .download-copy {
+    transform: none;
+  }
+  .download-requirements {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: min(900px, 90vw);
+    margin: 0 auto 30px;
+  }
+  .download-requirements ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .download-requirements .requirement-size {
+    grid-column: auto;
+  }
+}
+@media (max-width: 620px) {
+  .download-requirements {
+    padding-inline: 14px;
+  }
+  .download-requirements ul {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .download-requirements li {
+    text-align: center;
+    padding-left: 0;
+  }
+  .download-requirements li::before {
+    position: relative;
+    display: inline-block;
+    top: -1px;
+    left: auto;
+    margin-right: 7px;
+  }
+}
+@media (max-width: 980px) {
+  .tutorial[data-tutorial-level="master"] .section-heading h2 {
+    width: auto;
+    max-width: 94vw;
+    font-size: clamp(2rem, 6vw, 4.2rem);
+    white-space: normal;
+  }
+  .download-requirements {
+    width: min(720px, 88vw);
+  }
+}
+@media (max-width: 620px) {
+  .download-requirements {
+    width: min(440px, 90vw);
+  }
+  .download-requirements ul {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 980px) {
+  .driver-progress,
+  .map-progress {
+    right: 1.5% !important;
+  }
+}
+@media (max-width: 980px) {
+  .tutorial[data-tutorial-level="master"] .section-heading h2 {
+    font-size: clamp(3.4rem,6vw,6.6rem) !important;
+    white-space: nowrap !important;
+    transform: scaleX(.76);
+  }
+}
+@media (max-width: 620px) {
+  .tutorial[data-tutorial-level="master"] .section-heading h2 {
+    font-size: 3.4rem !important;
+    transform: scaleX(.58);
+  }
+}
+@media (max-width: 980px) {
+  .mirror-links {
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .mirror-links .mirror {
+    min-height: 42px;
+  }
+}
+@media (min-width: 901px) and (max-height: 790px) {
+  .credits-legal.credits-publisher-strip {
+    min-height: 70px;
+    padding: 6px 15px;
+    grid-template-columns: minmax(225px, 275px) minmax(0, 1fr);
+    gap: 14px;
+  }
+  .credits-legal.credits-publisher-strip .credits-mark { max-height: 35px; }
+  .credits-legal.credits-publisher-strip .credits-mark-activision { max-width: 61px; height: 21px; }
+  .credits-legal.credits-publisher-strip .credits-mark-luxoflux { max-width: 63px; height: 30px; }
+  .credits-legal.credits-publisher-strip .credits-mark-privacy { max-width: 35px; height: 35px; }
+  .credits-legal.credits-publisher-strip .credits-mark-teen { max-width: 45px; height: 35px; }
+  .credits-legal.credits-publisher-strip .credits-rights-copy p { font-size: .49rem; line-height: 1.2; }
+}
+@media (max-width: 900px) {
+  .credits-legal.credits-publisher-strip {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  .credits-publisher-logos {
+    width: min(330px, 100%);
+    margin-inline: auto;
+  }
+  .credits-rights-copy { text-align: center; }
+}
+@media (max-width:900px) {
+  .credits-legal.credits-publisher-strip#creditsRightsStrip {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 9px 14px;
+  }
+  #creditsRightsStrip .credits-publisher-logos { width: min(320px,100%); margin-inline:auto; }
+  #creditsRightsStrip .credits-rights-copy { text-align:center; }
+}
+@media (min-width: 901px) and (max-height: 790px) {
+  .credits-legal.credits-publisher-strip#creditsRightsStrip {
+    min-height: 112px !important;
+    grid-template-columns: minmax(330px, 380px) minmax(0, 1fr) !important;
+    column-gap: 25px !important;
+    padding: 8px 18px 7px !important;
+  }
+  #creditsRightsStrip .credits-mark-activision { width: 98px !important; height: 32px !important; }
+  #creditsRightsStrip .credits-mark-luxoflux { width: 94px !important; height: 47px !important; }
+  #creditsRightsStrip .credits-mark-privacy { width: 52px !important; height: 70px !important; }
+  #creditsRightsStrip .credits-mark-teen { width: 88px !important; height: 49px !important; }
+  #creditsRightsStrip .credits-rights-copy p { font-size: .50rem !important; }
+  #creditsRightsStrip .credits-asset-credit { font-size: .56rem !important; }
+  #creditsRightsStrip .credits-rights-signoff { font-size: .57rem !important; }
+}
+@media (max-width: 900px) {
+  .credits-legal.credits-publisher-strip#creditsRightsStrip {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto !important;
+    gap: 8px !important;
+    padding: 11px 15px 9px !important;
+  }
+  #creditsRightsStrip .credits-publisher-logos {
+    width: min(430px, 100%) !important;
+    margin-inline: auto !important;
+  }
+  #creditsRightsStrip .credits-rights-copy {
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  #creditsRightsStrip .credits-brand-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 5px !important;
+  }
+  #creditsRightsStrip .credits-brand-footer p {
+    white-space: normal !important;
+    text-align: center !important;
+  }
+}
 @media (min-width: 901px) and (min-height: 680px) {
   body.scene-engine-ready main > .social.scene-section { min-height: calc(100vh - 58px); }
 }
@@ -5642,19 +5991,6 @@ body.scene-engine-ready .social.scene-entering .social-card:nth-child(3) { anima
   .social-card-heading h3 { font-size: 2.2rem; }
   .social-link b { font-size: .74rem; }
 }
-
-
-
-/* ==========================================================================
-   V54 — Larger SOCIAL cards, contact buttons and readable descriptions
-   ========================================================================== */
-.social-card-heading small { font-size: .74rem; }
-.social-card-heading p { font-size: .86rem; line-height: 1.52; }
-.social-link { min-height: 57px; grid-template-columns: 42px minmax(0,1fr); padding: 8px 12px; gap: 12px; }
-.social-link-icon { width: 42px; height: 42px; }
-.social-link-icon svg { width: 25px; height: 25px; }
-.social-link small { font-size: .57rem; }
-.social-link b { font-size: .82rem; line-height: 1.05; }
 @media (min-width:901px) and (min-height:680px) and (max-height:790px) {
   .social-card-heading p { font-size: .76rem; line-height: 1.42; }
   .social-link { min-height: 49px; grid-template-columns:36px minmax(0,1fr); padding:6px 9px; gap:10px; }
@@ -5669,46 +6005,6 @@ body.scene-engine-ready .social.scene-entering .social-card:nth-child(3) { anima
   .social-link-icon { width:39px; height:39px; }
   .social-link b { font-size:.74rem; }
 }
-
-/* ========================================================================== 
-   V57 — Home right-side artwork + video playback refinements
-   ========================================================================== */
-.hero-right-image {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 54%;
-  pointer-events: none;
-  background:
-    linear-gradient(90deg, rgba(190,183,169,0) 0%, rgba(14,14,13,.08) 19%, rgba(9,10,11,.12) 100%),
-    url('assets/backgrounds/hero-chico-v57.jpg') center center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 10%, #000 27%, #000 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.35) 10%, #000 27%, #000 100%);
-  opacity: .96;
-  filter: saturate(1.08) contrast(1.04);
-  transform: scale(1.015);
-  transform-origin: center right;
-  animation: v57HeroRightDrift 16s ease-in-out infinite alternate;
-}
-
-@keyframes v57HeroRightDrift {
-  from { background-position: 47% center; transform: scale(1.015); }
-  to   { background-position: 54% center; transform: scale(1.055); }
-}
-
-.news-shot-sheen {
-  transition: opacity .2s ease;
-}
-.news-slide.is-video-playing .news-shot-sheen {
-  opacity: 0;
-  animation-play-state: paused;
-}
-.news-slide.has-video .news-slide-caption h3 {
-  text-transform: none;
-}
-
 @media (max-width: 900px) {
   .hero-right-image {
     width: 72%;
@@ -5718,7 +6014,6 @@ body.scene-engine-ready .social.scene-entering .social-card:nth-child(3) { anima
     mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.32) 12%, #000 34%, #000 100%);
   }
 }
-
 @media (max-width: 600px) {
   .hero-right-image {
     width: 88%;
@@ -5726,377 +6021,9 @@ body.scene-engine-ready .social.scene-entering .social-card:nth-child(3) { anima
     background-position: 62% center;
   }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .hero-right-image { animation: none !important; }
 }
-
-/* ========================================================================== 
-   V58 — Remove the slanted road panel + hard-stop video sheen while playing
-   ========================================================================== */
-.hero-poster .poster-road {
-  display: none !important;
-}
-
-.news-slide.is-video-playing .news-shot-sheen,
-.news-shot-sheen[hidden] {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  animation: none !important;
-  transform: none !important;
-}
-
-/* ========================================================================== 
-   V59 — MORE INFORMATION PANELS + NEW UPDATE VIDEO
-   ========================================================================== */
-
-.news-showcase {
-  height: clamp(520px, 66vh, 650px);
-}
-
-.news-slide {
-  display: flex;
-  flex-direction: column;
-}
-
-.news-more-row,
-.tutorial-more-row {
-  position: relative;
-  z-index: 7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 18px 15px;
-  background:
-    linear-gradient(90deg, rgba(255,77,16,.13), transparent 24% 76%, rgba(255,177,20,.12)),
-    linear-gradient(180deg, #171513, #0d0d0d);
-  border-top: 1px solid rgba(255,255,255,.1);
-}
-
-.more-information-button {
-  position: relative;
-  min-width: 210px;
-  min-height: 42px;
-  padding: 11px 28px 10px;
-  border: 1px solid rgba(255,197,50,.72);
-  color: #111;
-  background: linear-gradient(110deg, #ffd629 0%, #ff9c12 62%, #ff5b12 100%);
-  clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
-  box-shadow:
-    0 10px 22px rgba(0,0,0,.34),
-    inset 0 1px 0 rgba(255,255,255,.72);
-  font: 950 .72rem/1 Arial,sans-serif;
-  letter-spacing: 1.7px;
-  text-align: center;
-  cursor: pointer;
-  transition: transform .18s ease, filter .18s ease, box-shadow .18s ease;
-}
-
-.more-information-button::after {
-  content: "";
-  position: absolute;
-  left: 14px;
-  right: 14px;
-  bottom: 5px;
-  height: 2px;
-  background: rgba(20,15,8,.5);
-  transform: scaleX(.36);
-  transform-origin: center;
-  transition: transform .18s ease;
-}
-
-.more-information-button:hover,
-.more-information-button:focus-visible {
-  transform: translateY(-2px);
-  filter: saturate(1.12) brightness(1.04);
-  box-shadow: 0 14px 30px rgba(0,0,0,.42), 0 0 24px rgba(255,141,16,.22);
-  outline: none;
-}
-
-.more-information-button:hover::after,
-.more-information-button:focus-visible::after {
-  transform: scaleX(1);
-}
-
-.news-slide.is-prev .news-more-row,
-.news-slide.is-next .news-more-row {
-  opacity: .88;
-}
-
-.news-slide.is-far-left .more-information-button,
-.news-slide.is-far-right .more-information-button {
-  pointer-events: none;
-}
-
-.tutorial-card {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.tutorial-card-media {
-  position: relative;
-  overflow: hidden;
-  flex: 1 1 auto;
-  min-height: 0;
-}
-
-.tutorial-card-media img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
-
-.tutorial-card-media h3 {
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding: 58px 18px 15px;
-  color: #fff;
-  background: linear-gradient(transparent,rgba(0,0,0,.9));
-  font-family: Impact,"Arial Narrow Bold",sans-serif;
-  letter-spacing: .8px;
-}
-
-.tutorial-more-row {
-  flex: 0 0 auto;
-  padding: 13px 15px 16px;
-}
-
-.tutorial-more-row .more-information-button {
-  width: min(245px, 92%);
-}
-
-body.information-modal-open {
-  overflow: hidden;
-}
-
-.information-modal {
-  position: fixed;
-  inset: 0;
-  z-index: 2600;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-  background: rgba(2,5,8,.9);
-  backdrop-filter: blur(12px) saturate(.8);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity .24s ease, visibility .24s ease;
-}
-
-.information-modal.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.information-panel {
-  --information-accent: #ff9e16;
-  position: relative;
-  width: min(1040px, 96vw);
-  height: min(92vh, 900px);
-  max-height: min(92vh, 900px);
-  display: grid;
-  grid-template-rows: minmax(230px, 30vh) minmax(0,1fr);
-  overflow: hidden;
-  color: #f5f1ea;
-  background:
-    linear-gradient(115deg, rgba(255,92,18,.08), transparent 42%),
-    #0d1115;
-  border: 1px solid rgba(255,177,35,.65);
-  clip-path: polygon(20px 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%,0 20px);
-  box-shadow: 0 38px 110px rgba(0,0,0,.78), inset 0 1px 0 rgba(255,255,255,.16);
-  transform: translateY(22px) scale(.975);
-  transition: transform .3s cubic-bezier(.16,.84,.2,1);
-  isolation: isolate;
-}
-
-.information-modal.is-open .information-panel {
-  transform: translateY(0) scale(1);
-}
-
-.information-panel::before {
-  content: "";
-  position: absolute;
-  z-index: 4;
-  inset: 0;
-  pointer-events: none;
-  border-top: 5px solid #ff5a13;
-  background:
-    linear-gradient(115deg, transparent 0 71%, rgba(255,165,18,.09) 71.2% 76%, transparent 76.2%),
-    repeating-linear-gradient(120deg, transparent 0 74px, rgba(255,255,255,.025) 74px 76px);
-}
-
-.information-backdrop {
-  position: relative;
-  grid-row: 1;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: saturate(1.08) contrast(1.04);
-}
-
-.information-backdrop::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(5,8,11,.18), rgba(5,8,11,.45)),
-    linear-gradient(180deg, rgba(5,8,11,.08) 0%, rgba(5,8,11,.2) 48%, #0d1115 100%);
-}
-
-.information-backdrop::after {
-  content: "";
-  position: absolute;
-  right: 7%;
-  top: -35%;
-  width: 125px;
-  height: 180%;
-  transform: rotate(24deg);
-  background: linear-gradient(180deg, rgba(255,210,33,.72), rgba(255,76,15,.38));
-  opacity: .32;
-  box-shadow: 0 0 0 18px rgba(0,0,0,.22);
-}
-
-.information-heading {
-  position: absolute;
-  z-index: 7;
-  left: clamp(24px,5vw,58px);
-  right: clamp(64px,8vw,96px);
-  top: clamp(42px,8vh,88px);
-  color: #fff;
-  text-shadow: 0 4px 18px rgba(0,0,0,.75);
-}
-
-.information-kicker {
-  margin: 0 0 10px;
-  color: #ffc224;
-  font: 950 .72rem/1 Arial,sans-serif;
-  letter-spacing: 2.4px;
-}
-
-.information-heading h2 {
-  max-width: 900px;
-  margin: 0;
-  color: #fff;
-  font-family: Impact,"Arial Narrow Bold",sans-serif;
-  font-size: clamp(2rem,4vw,4.25rem);
-  line-height: .95;
-  letter-spacing: .8px;
-}
-
-.information-close {
-  position: absolute;
-  z-index: 12;
-  top: 16px;
-  right: 17px;
-  width: 46px;
-  height: 46px;
-  border: 1px solid rgba(255,211,76,.72);
-  color: #fff;
-  background: rgba(8,12,16,.84);
-  box-shadow: 0 12px 26px rgba(0,0,0,.36);
-  font-size: 2rem;
-  line-height: 1;
-  cursor: pointer;
-  transition: transform .18s ease, background .18s ease;
-}
-
-.information-close:hover,
-.information-close:focus-visible {
-  transform: rotate(5deg) scale(1.04);
-  background: #e84912;
-  outline: none;
-}
-
-.information-scroll {
-  position: relative;
-  z-index: 6;
-  grid-row: 2;
-  min-height: 0;
-  overflow-y: auto;
-  overscroll-behavior: contain;
-  padding: clamp(28px,4vw,46px) clamp(25px,5vw,62px) clamp(38px,5vw,62px);
-  scrollbar-width: thin;
-  scrollbar-color: #ff9f17 #171b1f;
-  background:
-    radial-gradient(circle at 92% 8%, rgba(255,127,14,.13), transparent 30%),
-    linear-gradient(180deg,#0d1115,#080b0e);
-  font-size: clamp(.97rem,1.25vw,1.08rem);
-  line-height: 1.78;
-}
-
-.information-scroll::-webkit-scrollbar { width: 10px; }
-.information-scroll::-webkit-scrollbar-track { background: #171b1f; }
-.information-scroll::-webkit-scrollbar-thumb {
-  background: linear-gradient(#ffc425,#ff5a12);
-  border: 2px solid #171b1f;
-}
-
-.information-scroll h3 {
-  margin: 0 0 20px;
-  color: #fff;
-  font-family: Impact,"Arial Narrow Bold",sans-serif;
-  font-size: clamp(1.75rem,3vw,2.8rem);
-  line-height: 1.02;
-  letter-spacing: .7px;
-}
-
-.information-scroll h4 {
-  margin: 26px 0 14px;
-  color: #ffc224;
-  font-size: 1.05rem;
-  letter-spacing: .3px;
-}
-
-.information-scroll p {
-  margin: 0 0 20px;
-  color: #dce1e4;
-}
-
-.information-scroll ul {
-  list-style: none;
-  margin: 0 0 26px;
-  padding: 0;
-  display: grid;
-  gap: 12px;
-}
-
-.information-scroll li {
-  position: relative;
-  margin: 0;
-  padding: 13px 16px 13px 36px;
-  color: #eef1f2;
-  background: linear-gradient(90deg, rgba(255,141,17,.11), rgba(255,255,255,.025));
-  border-left: 3px solid #ff9c16;
-}
-
-.information-scroll li::before {
-  content: "•";
-  position: absolute;
-  left: 17px;
-  top: 11px;
-  color: #ffc224;
-  font-size: 1.2rem;
-}
-
-.information-scroll a {
-  color: #ffc224;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-  overflow-wrap: anywhere;
-}
-
 @media (max-width: 820px) {
   .news-showcase { height: clamp(500px, 70vh, 620px); }
   .news-more-row { padding: 10px 12px 13px; }
@@ -6115,7 +6042,6 @@ body.information-modal-open {
   .information-scroll { padding: 26px 22px 42px; font-size: .98rem; }
   .information-close { top: 10px; right: 10px; width: 42px; height: 42px; }
 }
-
 @media (max-width: 560px) {
   .news-showcase { height: 555px; }
   .news-slide-caption { min-height: 92px; }
@@ -6132,7 +6058,6 @@ body.information-modal-open {
   .information-scroll li { padding-left: 30px; }
   .information-scroll li::before { left: 13px; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .information-panel,
   .more-information-button,
@@ -6140,165 +6065,6 @@ body.information-modal-open {
     transition: none !important;
   }
 }
-
-/* ========================================================================== 
-   V60 — Responsive NEWS cards + clean information typography
-   Keeps the existing section artwork, headings, tabs and animations intact.
-   ========================================================================== */
-
-/* Desktop/tablet NEWS card system rebuilt around the real viewport space. */
-.news-showcase {
-  height: 100%;
-  min-height: 0;
-}
-
-.news-slide {
-  top: clamp(8px, 1.45vh, 16px);
-  width: min(620px, 58vw);
-  display: flex;
-  flex-direction: column;
-}
-
-.news-slide.is-current {
-  left: 50%;
-  transform: translate3d(-50%,0,0) scale(1);
-}
-
-.news-slide.is-prev {
-  left: 8%;
-  transform: translate3d(-50%,7%,0) scale(.66);
-}
-
-.news-slide.is-next {
-  left: 92%;
-  transform: translate3d(-50%,7%,0) scale(.66);
-}
-
-.news-shot-frame {
-  flex: 0 0 auto;
-  aspect-ratio: 16 / 9;
-}
-
-.news-slide-caption {
-  flex: 0 0 auto;
-  min-height: 84px;
-  padding: 10px 20px 12px;
-  display: grid;
-  grid-template-rows: auto minmax(0,1fr) auto;
-  align-content: center;
-}
-
-.news-slide-caption span {
-  font-size: .62rem;
-  letter-spacing: 1.8px;
-}
-
-.news-slide-caption h3 {
-  margin: 5px 0 4px;
-  font-size: clamp(1.12rem, 1.4vw, 1.42rem);
-  line-height: 1.05;
-  text-wrap: balance;
-}
-
-.news-more-row {
-  flex: 0 0 56px;
-  min-height: 56px;
-  padding: 8px 14px 10px;
-}
-
-.news-more-row .more-information-button {
-  min-width: 192px;
-  min-height: 38px;
-  padding: 9px 22px 8px;
-  font-size: .67rem;
-  letter-spacing: 1.35px;
-}
-
-/* Keep arrows vertically centered on the smaller, complete card. */
-.news-arrow {
-  top: 40%;
-}
-
-/* Information window: the header is now a proper grid layer instead of an
-   absolutely positioned block that can spill into the article text. */
-.information-panel {
-  width: min(1000px, 94vw);
-  height: min(88svh, 840px);
-  max-height: min(88svh, 840px);
-  grid-template-rows: minmax(190px, 25vh) minmax(0,1fr);
-}
-
-.information-heading {
-  position: relative;
-  grid-row: 1;
-  align-self: end;
-  z-index: 7;
-  left: auto;
-  right: auto;
-  top: auto;
-  width: 100%;
-  min-width: 0;
-  padding: 48px clamp(72px, 8vw, 96px) 24px clamp(28px, 5vw, 56px);
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.information-kicker {
-  margin-bottom: 8px;
-  font-size: .68rem;
-  letter-spacing: 2.1px;
-}
-
-.information-heading h2 {
-  max-width: 880px;
-  margin: 0;
-  font-size: clamp(1.7rem, 2.55vw, 2.85rem);
-  line-height: 1.01;
-  letter-spacing: .45px;
-  text-wrap: balance;
-  overflow-wrap: normal;
-}
-
-.information-scroll {
-  padding-top: clamp(26px, 3vw, 38px);
-  font-size: clamp(.96rem, 1.08vw, 1.05rem);
-  line-height: 1.72;
-}
-
-.information-scroll h3 {
-  margin: 0 0 18px;
-  max-width: 880px;
-  font-size: clamp(1.35rem, 1.8vw, 1.95rem);
-  line-height: 1.12;
-  letter-spacing: .35px;
-  text-wrap: balance;
-}
-
-/* Short desktop windows receive a further proportional reduction instead of
-   clipping the action row below the visible scene. */
-@media (min-width: 901px) and (max-height: 790px) {
-  .news-slide {
-    width: min(570px, 55vw);
-    top: 6px;
-  }
-  .news-slide-caption {
-    min-height: 76px;
-    padding: 8px 18px 10px;
-  }
-  .news-slide-caption h3 {
-    font-size: clamp(1rem, 1.28vw, 1.27rem);
-  }
-  .news-more-row {
-    flex-basis: 50px;
-    min-height: 50px;
-    padding: 6px 12px 8px;
-  }
-  .news-more-row .more-information-button {
-    min-height: 35px;
-    padding-block: 8px 7px;
-  }
-}
-
 @media (max-width: 900px) {
   .news-showcase {
     height: min(520px, calc(100svh - 150px));
@@ -6337,7 +6103,6 @@ body.information-modal-open {
     font-size: clamp(1.25rem, 4.4vw, 1.7rem);
   }
 }
-
 @media (max-width: 620px) {
   .news-showcase {
     height: min(500px, calc(100svh - 120px));
@@ -6382,80 +6147,4 @@ body.information-modal-open {
   .information-scroll {
     padding: 22px 18px 38px;
   }
-}
-
-/* =====================================================================
-   YOUTUBE EMBED — news carousel
-   ===================================================================== */
-.news-youtube-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.news-youtube-thumb {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .4s ease, filter .4s ease;
-}
-
-.news-youtube-wrap:hover .news-youtube-thumb {
-  transform: scale(1.04);
-  filter: brightness(.75);
-}
-
-.news-youtube-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 72px;
-  height: 52px;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  z-index: 2;
-  transition: transform .2s ease, filter .2s ease;
-  filter: drop-shadow(0 4px 18px rgba(0,0,0,.7));
-}
-
-.news-youtube-play:hover {
-  transform: translate(-50%, -50%) scale(1.14);
-  filter: drop-shadow(0 6px 24px rgba(0,0,0,.9));
-}
-
-.news-youtube-play svg {
-  width: 100%;
-  height: 100%;
-}
-
-.news-youtube-play .yt-play-bg {
-  fill: #ff0000;
-  transition: fill .2s ease;
-}
-
-.news-youtube-play:hover .yt-play-bg {
-  fill: #cc0000;
-}
-
-.news-youtube-play .yt-play-arrow {
-  fill: #fff;
-}
-
-.news-youtube-iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
 }
