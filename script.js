@@ -760,6 +760,17 @@
 
     driverChanging = false;
     if (driverSceneActive && driverAutoEnabled) restartTimerAnimation();
+
+    // Warm the next/previous driver's images on idle so tapping the arrows
+    // again feels instant, without downloading the whole roster upfront.
+    idleWarm(() => {
+      const neighbours = new Set();
+      [driverIndex - 1, driverIndex + 1].forEach(index => {
+        const neighbourDriver = drivers[wrapIndex(index)];
+        if (neighbourDriver) collectImageSources(neighbourDriver, neighbours);
+      });
+      warmImages(neighbours);
+    });
   }
 
   function setDriver(next, options = {}) {
@@ -991,6 +1002,16 @@
 
     mapChanging = false;
     if (mapSceneActive) restartMapTimerAnimation();
+
+    // Warm neighbouring map images on idle for instant-feeling navigation.
+    idleWarm(() => {
+      const neighbours = new Set();
+      [mapIndex - 1, mapIndex + 1].forEach(index => {
+        const neighbourMap = maps[wrapMapIndex(index)];
+        if (neighbourMap) collectImageSources(neighbourMap, neighbours);
+      });
+      warmImages(neighbours);
+    });
   }
 
   function setMap(next, options = {}) {
@@ -1352,15 +1373,30 @@
   }
 
 
-  /* Load every section and every dynamic driver/map/tutorial image concurrently.
-     Navigation never waits for decoding; assets are already warming from startup. */
+  /* Only warm the images that are actually about to be shown (current driver/map
+     plus their immediate neighbours), and do it lazily on idle time. This replaces
+     the old behaviour of eagerly downloading every image in site-data.js on load,
+     which was the main cause of heavy initial page weight on mobile connections. */
   const preloadedSources = new Set();
   const preloadHandles = [];
 
-  function collectImageSources(value, output = preloadedSources) {
+  function warmImage(source) {
+    if (!source || preloadedSources.has(source)) return;
+    preloadedSources.add(source);
+    const image = new Image();
+    image.decoding = 'async';
+    image.src = source;
+    preloadHandles.push(image);
+  }
+
+  function warmImages(sources) {
+    (sources || []).forEach(warmImage);
+  }
+
+  function collectImageSources(value, output = new Set()) {
     if (!value) return output;
     if (typeof value === 'string') {
-      if (/\.(?:png|jpe?g|webp|gif|svg)(?:[?#].*)?$/i.test(value)) output.add(value);
+      if (/\.(?:png|jpe?g|webp|gif)(?:[?#].*)?$/i.test(value)) output.add(value);
       return output;
     }
     if (Array.isArray(value)) {
@@ -1373,23 +1409,26 @@
     return output;
   }
 
-  function preloadAllSiteAssets() {
+  function idleWarm(callback) {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(callback, { timeout: 2000 });
+    } else {
+      window.setTimeout(callback, 300);
+    }
+  }
+
+  /* Below-the-fold <img> tags: let the browser lazy-load them natively instead
+     of forcing eager downloads for the whole page on startup. */
+  function enableNativeLazyLoading() {
     qa('img').forEach((image, index) => {
-      image.loading = 'eager';
       image.decoding = 'async';
-      if ('fetchPriority' in image) image.fetchPriority = index < 3 ? 'high' : 'auto';
-      const source = image.currentSrc || image.src;
-      if (source) preloadedSources.add(source);
-    });
-
-    collectImageSources(data);
-
-    preloadedSources.forEach(source => {
-      const image = new Image();
-      image.decoding = 'async';
-      image.loading = 'eager';
-      image.src = source;
-      preloadHandles.push(image);
+      if (index < 3) {
+        // Hero/first-view images: fetch right away.
+        image.loading = 'eager';
+        if ('fetchPriority' in image) image.fetchPriority = 'high';
+      } else if (!image.loading || image.loading === 'auto') {
+        image.loading = 'lazy';
+      }
     });
   }
 
@@ -1503,11 +1542,29 @@
     }
   });
 
-  qa('main img').forEach(image => {
-    image.decoding = 'async';
-    image.loading = 'eager';
+  enableNativeLazyLoading();
+
+  // Warm the currently visible driver/map images plus their direct neighbours
+  // once the browser is idle, so switching feels instant without downloading
+  // the entire gallery upfront.
+  idleWarm(() => {
+    if (Array.isArray(drivers) && drivers.length) {
+      const nearby = new Set();
+      [driverIndex - 1, driverIndex, driverIndex + 1].forEach(index => {
+        const driver = drivers[wrapIndex(index)];
+        if (driver) collectImageSources(driver, nearby);
+      });
+      warmImages(nearby);
+    }
+    if (Array.isArray(maps) && maps.length) {
+      const nearbyMaps = new Set();
+      [mapIndex - 1, mapIndex, mapIndex + 1].forEach(index => {
+        const map = maps[wrapMapIndex(index)];
+        if (map) collectImageSources(map, nearbyMaps);
+      });
+      warmImages(nearbyMaps);
+    }
   });
 
-  preloadAllSiteAssets();
   refreshCinematicMode();
 })();
