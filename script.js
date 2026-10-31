@@ -1096,45 +1096,6 @@
   }));
   renderTutorial('beginner');
 
-
-  // V53: create the SOCIAL navigation item and scene before the cinematic engine
-  // captures the page sections. This also protects against an older cached HTML file.
-  function ensureSocialV53() {
-    const credits = document.querySelector('#credits');
-    const nav = document.querySelector('#mainNav');
-    if (!credits || !nav) return;
-
-    if (!nav.querySelector('a[href="#social"]')) {
-      const creditsLink = nav.querySelector('a[href="#credits"]');
-      const link = document.createElement('a');
-      link.href = '#social';
-      link.innerHTML = `<span aria-hidden="true" class="nav-icon"><svg viewBox="0 0 24 24"><circle cx="7" cy="12" r="2.5"></circle><circle cx="17" cy="7" r="2.5"></circle><circle cx="17" cy="17" r="2.5"></circle><path d="m9.3 10.9 5.4-2.8M9.3 13.1l5.4 2.8"></path></svg></span><span class="nav-copy"><b>SOCIAL</b><small>CONTACT</small></span>`;
-      nav.insertBefore(link, creditsLink);
-    }
-
-    if (document.querySelector('#social')) return;
-    const section = document.createElement('section');
-    section.className = 'social section-shell';
-    section.id = 'social';
-    section.setAttribute('aria-label', 'Social and contact links');
-    section.innerHTML = `
-      <div aria-hidden="true" class="social-crest">CONNECT</div>
-      <div class="social-header" data-reveal><p class="section-eyebrow">CONTACT</p><h2>SOCIAL</h2><p>Connect with the development team, follow their channels, and join the official Vigilante 8 community.</p></div>
-      <div class="social-grid">
-        <article class="social-card social-card-infinity" data-reveal><span class="social-number">02</span><div class="social-card-heading"><small>ASSOCIATE DEVELOPER</small><h3>INFINITY</h3><p>Bug fixing, player support, online community maintenance, and weekly multiplayer broadcasts.</p></div><div class="social-links" aria-label="INFINITY contact links">
-          <a class="social-link social-link-youtube" href="https://www.youtube.com/@InfiNity4U" target="_blank" rel="noopener noreferrer"><span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"></path><path d="m10 9 5 3-5 3Z" class="social-icon-cut"></path></svg></span><span><small>YOUTUBE</small><b>@InfiNity4U</b></span></a>
-          <a class="social-link social-link-discord" href="https://discord.com/users/642561584400564224" target="_blank" rel="noopener noreferrer"><span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8.2 6.2A12 12 0 0 1 12 5.6c1.3 0 2.6.2 3.8.6l.7-1.3c1.8.5 3.2 1.2 4.2 2.2 1.2 2 1.8 4.3 1.7 6.8-1.4 1.8-3.2 3.1-5.3 3.9l-1.2-1.6c.7-.3 1.3-.7 1.9-1.1-3.7 1.7-7.9 1.7-11.6 0 .6.4 1.2.8 1.9 1.1l-1.2 1.6a12.6 12.6 0 0 1-5.3-3.9c-.1-2.5.5-4.8 1.7-6.8 1-1 2.4-1.7 4.2-2.2l.7 1.3Z"></path><circle cx="8.8" cy="12" r="1.2" class="social-icon-cut"></circle><circle cx="15.2" cy="12" r="1.2" class="social-icon-cut"></circle></svg></span><span><small>DISCORD</small><b>OPEN PROFILE</b></span></a>
-        </div></article>
-        <article class="social-card social-card-community" data-reveal><span class="social-number">03</span><div class="social-card-heading"><small>GAME COMMUNITY</small><h3>VIGILANTE 8 ONLINE</h3><p>Join the official multiplayer community, find other players, watch matches, and follow project activity.</p></div><div class="social-links" aria-label="Game community links">
-          <a class="social-link social-link-youtube" href="https://www.youtube.com/@InfiNity4U" target="_blank" rel="noopener noreferrer"><span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12 29 29 0 0 0 3 16.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"></path><path d="m10 9 5 3-5 3Z" class="social-icon-cut"></path></svg></span><span><small>YOUTUBE</small><b>WATCH THE COMMUNITY</b></span></a>
-          <a class="social-link social-link-discord" href="https://discord.gg/ckscEVaxxQ" target="_blank" rel="noopener noreferrer"><span class="social-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8.2 6.2A12 12 0 0 1 12 5.6c1.3 0 2.6.2 3.8.6l.7-1.3c1.8.5 3.2 1.2 4.2 2.2 1.2 2 1.8 4.3 1.7 6.8-1.4 1.8-3.2 3.1-5.3 3.9l-1.2-1.6c.7-.3 1.3-.7 1.9-1.1-3.7 1.7-7.9 1.7-11.6 0 .6.4 1.2.8 1.9 1.1l-1.2 1.6a12.6 12.6 0 0 1-5.3-3.9c-.1-2.5.5-4.8 1.7-6.8 1-1 2.4-1.7 4.2-2.2l.7 1.3Z"></path><circle cx="8.8" cy="12" r="1.2" class="social-icon-cut"></circle><circle cx="15.2" cy="12" r="1.2" class="social-icon-cut"></circle></svg></span><span><small>DISCORD</small><b>JOIN THE SERVER</b></span></a>
-        </div></article>
-      </div>`;
-    credits.parentNode.insertBefore(section, credits);
-  }
-
-  ensureSocialV53();
-
   /* --------------------------------------------------------------------------
      Ambient ash and section scenery
   -------------------------------------------------------------------------- */
